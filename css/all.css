@@ -1,0 +1,1453 @@
+@font-face {
+	font-family: "brandon_grotesque_regularRg";
+	src: url("../fonts/brandongrotesque-regular-webfont.eot");
+	src: url("../fonts/brandongrotesque-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandongrotesque-regular-webfont.woff2") format("woff2"), url("../fonts/brandongrotesque-regular-webfont.woff") format("woff"), url("../fonts/brandongrotesque-regular-webfont.ttf") format("truetype"), url("../fonts/brandongrotesque-regular-webfont.svg#brandon_grotesque_regularRg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon.eot?-g5aox1");
+	src: url("../fonts/icomoon.eot?#iefix-g5aox1") format("embedded-opentype"), url("../fonts/icomoon.ttf?-g5aox1") format("truetype"), url("../fonts/icomoon.woff?-g5aox1") format("woff"), url("../fonts/icomoon.svg?-g5aox1#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	font-family: "icomoon";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1; /* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\e601";
+}
+
+.icon-linkedin:before {
+	content: "\e602";
+}
+
+.icon-icon-01:before {
+	content: "\e604";
+}
+
+.icon-icon-02:before {
+	content: "\e605";
+}
+
+.icon-icon-03:before {
+	content: "\e606";
+}
+
+.icon-icon-04:before {
+	content: "\e607";
+}
+
+.icon-twitter:before {
+	content: "\e612";
+}
+
+.icon-checked:before {
+	content: "\e609";
+}
+
+.icon-check-1:before {
+	content: "\e600";
+}
+
+#footer:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.social-networks,
+.onepage-pagination {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	color: #f1e597;
+	background: #151515 url(../images/bg-body.png) 50% 0;
+	font: 20px/1.8 "brandon_grotesque_regularRg", Arial, Helvetica, sans-serif;
+	min-width: 320px;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+body.viewing-page-2 {
+	background-position: 50% 0;
+}
+
+body.viewing-page-3 {
+	background-position: 50% 0;
+}
+
+* {
+	max-height: 1000000px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+img {
+	border-style: none;
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+a {
+	text-decoration: none;
+	color: #f1e597;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input,
+textarea,
+select {
+	font: 100% "brandon_grotesque_regularRg", Arial, Helvetica, sans-serif;
+	color: #fff;
+	vertical-align: middle;
+}
+
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="file"],
+input[type="submit"] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	margin: 0;
+	padding: 4px 20px;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border: none;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+	outline: none;
+	color: #fff;
+}
+
+textarea {
+	overflow: auto;
+	resize: vertical;
+	vertical-align: top;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	padding: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "brandon_grotesque_regularRg", Arial, Helvetica, sans-serif;
+	line-height: 1.2em;
+	margin: 0 0 1.2em;
+}
+
+p {
+	margin: 0 0 1.2em;
+}
+
+q {
+	quotes: none;
+}
+
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -.5em;
+}
+
+sub {
+	bottom: -.25em;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.gm-style img {
+	max-width: none;
+}
+
+#header {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.logo {
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	width: 479px;
+	-webkit-transform: translate(50%, -50%);
+	-ms-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+}
+
+.icon {
+	width: 66px;
+	height: 66px;
+	position: absolute;
+	right: 50%;
+	-webkit-transform: translateX(50%);
+	-ms-transform: translateX(50%);
+	transform: translateX(50%);
+	bottom: 80px;
+	color: #f1e597;
+	opacity: 0;
+	-webkit-transition: opacity 2s .2s ease;
+	transition: opacity 2s .2s ease;
+}
+
+.icon i {
+	font-size: 66px;
+	display: block;
+}
+
+#footer {
+	width: 100%;
+	position: relative;
+	opacity: 0;
+	margin: 20px 0 0;
+}
+
+#footer.section-active {
+	opacity: 1;
+}
+
+.form-contact {
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	width: 600px;
+	padding: 0 0 140px;
+	-webkit-transform: translate(50%, -50%);
+	-ms-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+	letter-spacing: 2px;
+	word-spacing: 1px;
+}
+
+.form-contact .row {
+	overflow: hidden;
+	margin: 0 0 40px;
+}
+
+.form-contact .row.error textarea,
+.form-contact .row.error input[type="text"] {
+	color: #e68b08;
+	border-bottom: 2px solid #e68b08;
+}
+
+.form-contact input[type="text"],
+.form-contact input[type="email"] {
+	font-size: 30px;
+	line-height: 32px;
+	width: 100%;
+	height: 88px;
+	background: #0d0d0d;
+	border-bottom: 2px solid #f1e597;
+	color: rgba(255, 255, 255, .15);
+}
+
+.form-contact input[type="text"]::-webkit-input-placeholder,
+.form-contact input[type="email"]::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, .15);
+}
+
+.form-contact input[type="text"]:-moz-placeholder,
+.form-contact input[type="email"]:-moz-placeholder {
+	color: rgba(255, 255, 255, .15);
+}
+
+.form-contact input[type="text"]::-moz-placeholder,
+.form-contact input[type="email"]::-moz-placeholder {
+	color: rgba(255, 255, 255, .15);
+	opacity: 1;
+}
+
+.form-contact input[type="text"]:-ms-input-placeholder,
+.form-contact input[type="email"]:-ms-input-placeholder {
+	color: rgba(255, 255, 255, .15);
+}
+
+.form-contact input[type="text"].placeholder,
+.form-contact input[type="email"].placeholder {
+	color: rgba(255, 255, 255, .15);
+}
+
+.form-contact input[type="text"].text-active,
+.form-contact input[type="text"].focus,
+.form-contact input[type="email"].text-active,
+.form-contact input[type="email"].focus {
+	color: #fff;
+}
+
+.form-contact textarea {
+	font-size: 30px;
+	line-height: 32px;
+	width: 100%;
+	background: #0d0d0d;
+	border-bottom: 2px solid #f1e597;
+	color: rgba(255, 255, 255, .15);
+	height: 278px;
+	max-width: 100%;
+	min-height: 278px;
+	resize: none;
+	padding: 26px 20px;
+}
+
+.form-contact textarea::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, .15);
+}
+
+.form-contact textarea:-moz-placeholder {
+	color: rgba(255, 255, 255, .15);
+}
+
+.form-contact textarea::-moz-placeholder {
+	color: rgba(255, 255, 255, .15);
+	opacity: 1;
+}
+
+.form-contact textarea:-ms-input-placeholder {
+	color: rgba(255, 255, 255, .15);
+}
+
+.form-contact textarea.placeholder {
+	color: rgba(255, 255, 255, .15);
+}
+
+.form-contact textarea.text-active,
+.form-contact textarea.focus {
+	color: #fff;
+}
+
+.form-contact.complete
+.progress-button[data-perspective] .content {
+	background: #f1e597;
+}
+
+.social-networks {
+	position: absolute;
+	right: 50%;
+	-webkit-transform: translateX(50%);
+	-ms-transform: translateX(50%);
+	transform: translateX(50%);
+	width: 100%;
+	bottom: 60px;
+	text-align: center;
+	letter-spacing: -4px;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+}
+
+.social-networks li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px;
+}
+
+.social-networks a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	font-size: 32px;
+	line-height: 32px;
+	letter-spacing: normal;
+	color: #f1e597;
+	-webkit-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+}
+
+.social-networks a:hover {
+	text-decoration: none;
+	opacity: .7;
+}
+
+/* General styles for all types of buttons */
+
+.progress-button {
+	position: relative;
+	display: inline-block;
+	padding: 0 60px;
+	outline: none;
+	border: none;
+	background: rgba(241, 229, 151, .5);
+	color: #0d0d0d;
+	text-transform: uppercase;
+	line-height: 88px;
+	font-size: 20px;
+	width: 100%;
+}
+
+.progress-button .content {
+	position: relative;
+	display: block;
+}
+
+.progress-button .content:before,
+.progress-button .content:after {
+	position: absolute;
+	right: 20px;
+	color: #0e7138;
+	font-family: "icomoon";
+	opacity: 0;
+	-webkit-transition: opacity .3s .3s;
+	transition: opacity .3s .3s;
+	color: #bdb166;
+}
+
+.progress-button .content:before {
+	content: "\e600";
+}
+
+.progress-button .content:after {
+	content: "\e601";
+}
+
+.progress-button .progress {
+	background: #f1e597;
+}
+
+.progress-button .progress-inner {
+	position: absolute;
+	left: 0;
+	background: #bdb166;
+}
+
+.progress-button[disabled],
+.progress-button[disabled].state-loading {
+	cursor: default;
+}
+
+.progress-button.state-success .content::before,
+.progress-button.state-error .content::after {
+	opacity: 1;
+}
+
+.notransition {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+.progress-button[data-horizontal] .progress-inner {
+	top: 0;
+	width: 0;
+	height: 100%;
+	-webkit-transition: width .3s, opacity .3s;
+	transition: width .3s, opacity .3s;
+}
+
+.progress-button[data-vertical] .progress-inner {
+	bottom: 0;
+	width: 100%;
+	height: 0;
+	-webkit-transition: height .3s, opacity .3s;
+	transition: height .3s, opacity .3s;
+}
+
+/* Necessary 3d styles for buttons with perspective */
+
+.progress-button[data-perspective] {
+	position: relative;
+	display: inline-block;
+	padding: 0;
+	background: transparent;
+	-webkit-perspective: 900px;
+	perspective: 900px;
+	vertical-align: middle;
+}
+
+.progress-button[data-perspective] .content {
+	padding: 0 60px;
+	background: rgba(241, 229, 151, .5);
+}
+
+.progress-button[data-perspective] .progress-wrap {
+	display: block;
+	-webkit-transition: -webkit-transform .2s;
+	transition: transform .2s;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.progress-button[data-perspective] .content,
+.progress-button[data-perspective] .progress {
+	outline: 1px solid transparent; /* Smoothen jagged edges in FF */
+}
+
+.progress-button[data-style="fill"][data-horizontal] {
+	overflow: hidden;
+}
+
+.progress-button[data-style="fill"][data-horizontal] .content {
+	z-index: 10;
+	-webkit-transition: -webkit-transform .3s;
+	transition: transform .3s;
+}
+
+.progress-button[data-style="fill"][data-horizontal] .content::before,
+.progress-button[data-style="fill"][data-horizontal] .content::after {
+	top: 100%;
+	right: auto;
+	left: 50%;
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.progress-button[data-style="fill"][data-horizontal].state-success .content,
+.progress-button[data-style="fill"][data-horizontal].state-error .content {
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.progress-button[data-style="fill"][data-vertical] {
+	overflow: hidden;
+}
+
+.progress-button[data-style="fill"][data-vertical] .content {
+	z-index: 10;
+	-webkit-transition: -webkit-transform .3s;
+	transition: transform .3s;
+}
+
+.progress-button[data-style="fill"][data-vertical] .content::before,
+.progress-button[data-style="fill"][data-vertical] .content::after {
+	top: 100%;
+	right: auto;
+	left: 50%;
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.progress-button[data-style="fill"][data-vertical].state-success .content,
+.progress-button[data-style="fill"][data-vertical].state-error .content {
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.progress-button[data-style="shrink"] {
+	/* common for horizontal and vertical */
+	overflow: hidden;
+	-webkit-transition: -webkit-transform .2s;
+	transition: transform .2s;
+}
+
+.progress-button[data-style="shrink"][data-horizontal] .content {
+	-webkit-transition: opacity .3s, -webkit-transform .3s;
+	transition: opacity .3s, transform .3s;
+}
+
+.progress-button[data-style="shrink"][data-horizontal] .content::before,
+.progress-button[data-style="shrink"][data-horizontal] .content::after {
+	top: 100%;
+	right: auto;
+	left: 50%;
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.progress-button[data-style="shrink"][data-horizontal].state-loading {
+	-webkit-transform: scaleY(.3);
+	-ms-transform: scaleY(.3);
+	transform: scaleY(.3);
+}
+
+.progress-button[data-style="shrink"][data-horizontal].state-loading .content {
+	opacity: 0;
+}
+
+.progress-button[data-style="shrink"][data-horizontal].state-success .content,
+.progress-button[data-style="shrink"][data-horizontal].state-error .content {
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.progress-button[data-style="shrink"][data-vertical] .content {
+	-webkit-transition: opacity .3s, -webkit-transform .3s;
+	transition: opacity .3s, transform .3s;
+}
+
+.progress-button[data-style="shrink"][data-vertical] .content::before,
+.progress-button[data-style="shrink"][data-vertical] .content::after {
+	top: 100%;
+	right: auto;
+	left: 50%;
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.progress-button[data-style="shrink"][data-vertical].state-loading {
+	-webkit-transform: scaleX(.1);
+	-ms-transform: scaleX(.1);
+	transform: scaleX(.1);
+}
+
+.progress-button[data-style="shrink"][data-vertical].state-loading .content {
+	opacity: 0;
+}
+
+.progress-button[data-style="shrink"][data-vertical].state-success .content,
+.progress-button[data-style="shrink"][data-vertical].state-error .content {
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.progress-button[data-style="rotate-angle-bottom"] .progress {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	-webkit-transform: rotateX(-87deg);
+	transform: rotateX(-87deg);
+	-webkit-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+
+.success-form .progress-button[data-style="rotate-angle-bottom"].state-loading .progress-wrap {
+	-webkit-transform: rotateX(45deg);
+	transform: rotateX(45deg);
+}
+
+.progress-button[data-style="rotate-angle-top"] .progress {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	box-shadow: 0 1px 0 #148544;
+	-webkit-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	-webkit-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+.progress-button[data-style="rotate-angle-top"].state-loading .progress-wrap {
+	-webkit-transform: rotateX(-45deg);
+	transform: rotateX(-45deg);
+}
+
+.progress-button[data-style="rotate-angle-left"] .progress {
+	position: absolute;
+	top: 0;
+	right: 100%;
+	width: 20px;
+	height: 100%;
+	box-shadow: 1px 0 0 #148544;
+	-webkit-transform: rotateY(-90deg);
+	transform: rotateY(-90deg);
+	-webkit-transform-origin: 100% 50%;
+	-ms-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+.progress-button[data-style="rotate-angle-left"].state-loading .progress-wrap {
+	-webkit-transform: rotateY(45deg);
+	transform: rotateY(45deg);
+}
+
+.progress-button[data-style="rotate-angle-right"] .progress {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 20px;
+	height: 100%;
+	box-shadow: -1px 0 0 #148544;
+	-webkit-transform: rotateY(90deg);
+	transform: rotateY(90deg);
+	-webkit-transform-origin: 0 50%;
+	-ms-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+.progress-button[data-style="rotate-angle-right"].state-loading .progress-wrap {
+	-webkit-transform: rotateY(-45deg);
+	transform: rotateY(-45deg);
+}
+
+.progress-button[data-style="rotate-side-down"] .progress {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	-webkit-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+	-webkit-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.progress-button[data-style="rotate-side-down"].state-loading .progress-wrap {
+	-webkit-transform: rotateX(90deg) translateZ(10px);
+	transform: rotateX(90deg) translateZ(10px);
+}
+
+.progress-button[data-style="rotate-side-up"] .progress {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	-webkit-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	-webkit-transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.progress-button[data-style="rotate-side-up"].state-loading .progress-wrap {
+	-webkit-transform: rotateX(-90deg) translateZ(10px);
+	transform: rotateX(-90deg) translateZ(10px);
+}
+
+.progress-button[data-style="rotate-side-left"] .progress-wrap {
+	-webkit-transform-origin: 0 50%;
+	-ms-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+.progress-button[data-style="rotate-side-left"] .progress {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 100%;
+	-webkit-transform: rotateY(90deg);
+	transform: rotateY(90deg);
+	-webkit-transform-origin: 0 50%;
+	-ms-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+.progress-button[data-style="rotate-side-left"].state-loading .progress-wrap {
+	-webkit-transform: translateX(50%) rotateY(90deg) translateZ(10px);
+	transform: translateX(50%) rotateY(90deg) translateZ(10px);
+}
+
+.progress-button[data-style="rotate-side-right"] .progress-wrap {
+	-webkit-transform-origin: 100% 50%;
+	-ms-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+.progress-button[data-style="rotate-side-right"] .progress {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 20px;
+	height: 100%;
+	-webkit-transform: rotateY(90deg);
+	transform: rotateY(90deg);
+	-webkit-transform-origin: 0 50%;
+	-ms-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+.progress-button[data-style="rotate-side-right"].state-loading .progress-wrap {
+	-webkit-transform: translateX(-50%) rotateY(-90deg) translateZ(10px);
+	transform: translateX(-50%) rotateY(-90deg) translateZ(10px);
+}
+
+.progress-button[data-style="rotate-back"] .progress-wrap {
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.progress-button[data-style="rotate-back"] .content {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.progress-button[data-style="rotate-back"] .progress {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+	-webkit-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.progress-button[data-style="rotate-back"].state-loading .progress-wrap {
+	-webkit-transform: rotateX(180deg) scaleX(.6) scaleY(.3);
+	transform: rotateX(180deg) scaleX(.6) scaleY(.3);
+}
+
+.progress-button[data-style="flip-open"] .content {
+	z-index: 10;
+	-webkit-transition: -webkit-transform .2s;
+	transition: transform .2s;
+	-webkit-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+
+.progress-button[data-style="flip-open"] .progress {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.progress-button[data-style="flip-open"].state-loading .content {
+	-webkit-transform: rotateX(45deg);
+	transform: rotateX(45deg);
+}
+
+.progress-button[data-style="slide-down"] {
+	padding: 0;
+	overflow: visible;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.progress-button[data-style="slide-down"] .content {
+	z-index: 10;
+	padding: 0 60px;
+	background: #1d9650;
+}
+
+.progress-button[data-style="slide-down"] .progress {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: -webkit-transform .2s;
+	transition: transform .2s;
+}
+
+.progress-button[data-style="slide-down"].state-loading .progress {
+	-webkit-transform: translateY(10px);
+	-ms-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.progress-button[data-style="move-up"] {
+	padding: 0;
+	overflow: visible;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.progress-button[data-style="move-up"] .content {
+	z-index: 10;
+	padding: 0 60px;
+	background: #1d9650;
+	-webkit-transition: -webkit-transform .2s;
+	transition: transform .2s;
+}
+
+.progress-button[data-style="move-up"] .progress {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.progress-button[data-style="move-up"].state-loading .content {
+	-webkit-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.progress-button[data-style="top-line"] .progress-inner {
+	height: 3px;
+}
+
+.progress-button[data-style="top-line"] .content::before,
+.progress-button[data-style="top-line"] .content::after {
+	right: auto;
+	left: 100%;
+	margin-left: 25px;
+}
+
+.progress-button[data-style="lateral-lines"] .progress-inner {
+	width: 100%;
+	border-right: 3px solid #0e7138;
+	border-left: 3px solid #0e7138;
+	background: transparent;
+}
+
+.progress-button[data-style="lateral-lines"] .content::before,
+.progress-button[data-style="lateral-lines"] .content::after {
+	right: auto;
+	left: 100%;
+	margin-left: 25px;
+}
+
+body,
+html {
+	margin: 0;
+	overflow-y: hidden;
+}
+
+body,
+.onepage-wrapper,
+html {
+	display: block;
+	position: static;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.onepage-wrapper {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	padding: 0;
+	-webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .section {
+	width: 100%;
+	height: 100%;
+}
+
+.onepage-pagination {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	z-index: 5;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.onepage-pagination li {
+	padding: 0;
+	text-align: center;
+	vertical-align: top;
+}
+
+.onepage-pagination li a {
+	padding: 10px;
+	width: 4px;
+	height: 4px;
+	display: block;
+}
+
+.onepage-pagination li a:before {
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: rgba(0, 0, 0, .85);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.onepage-pagination li a.active:before {
+	width: 10px;
+	height: 10px;
+	background: none;
+	border: 1px solid black;
+	margin-top: -4px;
+	left: 8px;
+}
+
+.disabled-onepage-scroll,
+.disabled-onepage-scroll .wrapper {
+	overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+	position: relative !important;
+	top: auto !important;
+	left: auto !important;
+}
+
+.disabled-onepage-scroll .onepage-wrapper {
+	-webkit-transform: none !important;
+	transform: none !important;
+	-ms-transform: none !important;
+	min-height: 100%;
+}
+
+.disabled-onepage-scroll .onepage-pagination {
+	display: none;
+}
+
+body.disabled-onepage-scroll,
+.disabled-onepage-scroll .onepage-wrapper,
+html {
+	position: inherit;
+}
+
+#main {
+	overflow: hidden;
+	width: 100%;
+}
+
+.onepage-wrapper .section {
+	width: 100%;
+}
+
+.section {
+	opacity: 0;
+	position: relative;
+	overflow: hidden;
+	padding: 20px 0 100px;
+	width: 100%;
+}
+
+.section.section-active {
+	opacity: 1;
+}
+
+.section.section-active .text {
+	opacity: 1;
+}
+
+.section.section-active .icon {
+	opacity: 1;
+}
+
+.section.section-active .icon:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.section .text {
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	width: 600px;
+	text-align: justify;
+	-webkit-transform: translate(50%, -50%);
+	-ms-transform: translate(50%, -50%);
+	transform: translate(50%, -50%);
+	opacity: 0;
+	-webkit-transition: opacity 2s .2s ease;
+	transition: opacity 2s .2s ease;
+	letter-spacing: 2px;
+	word-spacing: 1px;
+}
+
+.section .text span {
+	color: #fff;
+}
+
+.section .text p {
+	margin: 0 0 40px;
+}
+
+.section .text strong {
+	font-weight: normal;
+	color: #fff;
+	display: block;
+	text-align: center;
+}
+
+.onepage-pagination {
+	overflow: hidden;
+	position: fixed;
+	top: 50%;
+	right: 10px;
+	z-index: 5;
+}
+
+.onepage-pagination li {
+	overflow: hidden;
+	margin: 0 0;
+}
+
+.onepage-pagination li a {
+	position: relative;
+	padding: 10px;
+	width: 4px;
+	height: 4px;
+	display: block;
+	border-radius: 50%;
+}
+
+.onepage-pagination li a:before {
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: rgba(255, 255, 255, .85);
+	border-radius: 10px;
+}
+
+.onepage-pagination li a:hover:before {
+	width: 10px;
+	height: 10px;
+	background: none;
+	border: 1px solid #fff;
+	margin-top: -4px;
+	left: 7px;
+}
+
+.onepage-pagination li a.active:before {
+	width: 10px;
+	height: 10px;
+	background: #fff !important;
+	border: 1px solid #fff;
+	margin-top: -4px;
+	left: 7px;
+}
+
+.onepage-pagination.hide {
+	display: none;
+}
+
+@media only screen and (min-width: 1025px) {
+	a[href^=tel],
+	a[href^=skype],
+	a[href^=sms] {
+		cursor: default;
+		pointer-events: none;
+	}
+}
+
+@media only screen and (max-width: 1280px) and (max-height: 800px) {
+	.progress-button {
+		line-height: 66px;
+	}
+}
+
+@media (max-width: 1024px) {
+	#header {
+		margin: 100px 0;
+	}
+
+	.logo {
+		width: 316px;
+		position: relative;
+		right: auto;
+		top: auto;
+		margin: 0 auto 200px;
+		-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+
+	.icon {
+		width: 44px;
+		height: 44px;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+		position: relative;
+		right: auto;
+		bottom: auto;
+		margin: 50px auto 0;
+		display: block;
+		opacity: 1;
+	}
+
+	.icon i {
+		font-size: 44px;
+	}
+
+	#footer {
+		opacity: 1;
+	}
+
+	.form-contact {
+		width: 52.08%;
+		position: relative;
+		right: auto;
+		top: auto;
+		-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		transform: translate(0, 0);
+		margin: 0 auto;
+	}
+
+	body,
+	html {
+		overflow-y: visible;
+	}
+
+	.section {
+		opacity: 1;
+	}
+
+	.section .text {
+		font-size: 16px;
+		line-height: 30px;
+		width: 52.08%;
+		position: relative;
+		margin: 40px auto 200px;
+		-webkit-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		transform: translate(0, 0);
+		right: auto;
+		top: auto;
+		opacity: 1;
+	}
+
+	.win-height {
+		height: auto !important;
+	}
+}
+
+@media (max-width: 1023px) {
+	.form-contact .row {
+		margin: 0 0 30px;
+	}
+
+	.form-contact input[type="text"],
+	.form-contact input[type="email"] {
+		font-size: 24px;
+		line-height: 26px;
+		height: 66px;
+	}
+
+	.form-contact textarea {
+		font-size: 24px;
+		line-height: 26px;
+		height: 180px;
+		min-height: 180px;
+	}
+
+	.progress-button {
+		line-height: 66px;
+	}
+}
+
+@media (max-width: 767px) {
+	.logo {
+		width: 158px;
+	}
+
+	.icon {
+		width: 22px;
+		height: 22px;
+	}
+
+	.icon i {
+		font-size: 22px;
+	}
+
+	.form-contact {
+		width: 81.25%;
+	}
+
+	.form-contact .row {
+		margin: 0 0 20px;
+	}
+
+	.form-contact input[type="text"],
+	.form-contact input[type="email"] {
+		font-size: 16px;
+		line-height: 18px;
+		height: 46px;
+	}
+
+	.form-contact textarea {
+		font-size: 16px;
+		line-height: 18px;
+		height: 142px;
+		min-height: 142px;
+	}
+
+	.social-networks {
+		bottom: 40px;
+	}
+
+	.social-networks a {
+		width: 18px;
+		height: 18px;
+		font-size: 18px;
+		line-height: 18px;
+	}
+
+	.progress-button {
+		line-height: 46px;
+		font-size: 16px;
+	}
+
+	.progress-button[data-style="rotate-angle-bottom"] .progress {
+		-webkit-transform: rotateX(-88deg);
+		transform: rotateX(-88deg);
+	}
+
+	.section .text {
+		font-size: 14px;
+		line-height: 18px;
+		width: 81.25%;
+	}
+}
+
+@media only screen and (max-height: 799px) {
+	.icon {
+		bottom: 30px;
+	}
+
+	.form-contact .row {
+		margin: 0 0 20px;
+	}
+
+	.form-contact input[type="text"],
+	.form-contact input[type="email"] {
+		font-size: 24px;
+		line-height: 26px;
+		height: 66px;
+	}
+
+	.form-contact textarea {
+		font-size: 24px;
+		line-height: 26px;
+		height: 180px;
+		min-height: 180px;
+	}
+}
+
+@media only screen and (max-height: 669px) {
+	#footer {
+		margin: 0;
+	}
+
+	.form-contact input[type="text"],
+	.form-contact input[type="email"] {
+		font-size: 16px;
+		line-height: 18px;
+		height: 46px;
+	}
+
+	.form-contact textarea {
+		font-size: 16px;
+		line-height: 18px;
+		height: 142px;
+		min-height: 142px;
+	}
+
+	.social-networks {
+		bottom: 30px;
+	}
+}
+

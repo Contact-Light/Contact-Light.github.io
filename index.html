@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <script>
@@ -29,32 +29,62 @@
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <meta charset="utf-8">
-<title>Contact Light</title>
-<style type="text/css">
-body {
-	background-image: url(contact-light-background.png);
-	background-repeat: repeat;
-	background-color: #000000;
-}
-html, body, #wrapper {
-   height:100%;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   border: 0;
-}
-#wrapper td {
-   vertical-align: middle;
-   text-align: center;
-}
-</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ContactLight</title>
+	<link media="all" rel="stylesheet" href="css/all.css">
+	<!--[if IE 9]><link rel="stylesheet" href="css/ie.css"><![endif]-->
 </head>
-
 <body>
-   <table id="wrapper">
-      <tr>
-         <td><img src="contact-light-logo.png" width="500" height="400" alt="Contact Light"/></td>
-      </tr>
-   </table>
+	<div id="wrapper">
+		<header id="header" class="win-height slide">
+			<div class="logo">
+				<a href="#">
+					<img src="images/logo.svg" alt="Contact Light" width="479" height="317" onerror="this.onerror=null; this.src='images/logo.png'">
+				</a>
+			</div>
+			<a href="#section1" class="icon"><i class="icon-icon-01"></i></a>
+		</header>
+		<main role="main" id="main">
+			<section class="win-height section slide" id="section1">
+				<div class="text">
+					<p><span>What if</span> emergency responders could see an incident through your eyes, live? <span>What if</span> they could know your exact location, even 5 levels underground? <span>What if</span> billboards could understand how you felt about them and adapt to your interests? <span>What if</span> you could move what you were watching on a big screen somewhere to your mobile screen anywhere? <span>What if</span> you visited a new city and were recommended restaurants relevant to your tastes and time of day? <span>What if</span> all of this was already possible?</p>
+				</div>
+				<a href="#section2" class="icon"><i class="icon-icon-02"></i></a>
+			</section>
+			<section class="win-height section slide" id="section2">
+				<div class="text">
+					<p>On July 20, 1969, at 20:17 UTC, one of Apollo 11’s landing pad probes touched the moon’s surface and Buzz Aldrin spoke mankind’s first words from the surface of another world.</p>
+					<p><strong>"Contact Light"</strong></p>
+					<p>Born out of that moment, inspired by that same pioneering spirit and technological ambition, we too are looking to the future and seek to lead the way. </p>
+				</div>
+				<a href="#footer" class="icon"><i class="icon-icon-03"></i></a>
+			</section>
+		</main>
+		<footer id="footer" class="win-height slide">
+			<form action="mail.php" method="post" class="form-contact validate-form">
+				<fieldset>
+					<div class="row">
+						<input type="text" placeholder="Your name" class="required" name="uname">
+					</div>
+					<div class="row">
+						<input type="text" placeholder="Your e-mail address" class="required-email" name="umail">
+					</div>
+					<div class="row">
+						<textarea name="umessage" placeholder="The things you want to know" class="required"></textarea>
+					</div>
+					<button type="submit" class="progress-button" data-style="rotate-angle-bottom" data-perspective data-horizontal>CONTACT US</button>
+				</fieldset>
+			</form>
+			<ul class="social-networks">
+				<li><a href="https://www.facebook.com/takethemoonshot" class="icon-facebook" target="_blank"></a></li>
+				<li><a href="https://twitter.com/takethemoonshot" class="icon-twitter" target="_blank"></a></li>
+				<li><a href="https://www.linkedin.com/company/contact-light" class="icon-linkedin" target="_blank"></a></li>
+				<li><a href="https://index.co/company/takethemoonshot" class="icon-icon-04" target="_blank"></a></li>
+			</ul>
+		</footer>
+	</div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="js/jquery.main.js"></script>
 </body>
 </html>

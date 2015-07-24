@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-g5aox1');
+	src:url('../fonts/icomoon.eot?#iefix-g5aox1') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?-g5aox1') format('truetype'),
+		url('../fonts/icomoon.woff?-g5aox1') format('woff'),
+		url('../fonts/icomoon.svg?-g5aox1#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\e601";
+}
+.icon-linkedin:before {
+	content: "\e602";
+}
+.icon-icon-01:before {
+	content: "\e604";
+}
+.icon-icon-02:before {
+	content: "\e605";
+}
+.icon-icon-03:before {
+	content: "\e606";
+}
+.icon-icon-04:before {
+	content: "\e607";
+}
+.icon-twitter:before {
+	content: "\e612";
+}
+.icon-checked:before {
+	content: "\e609";
+}
+.icon-check-1:before {
+	content: "\e600";
+}

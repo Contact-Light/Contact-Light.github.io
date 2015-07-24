@@ -1,0 +1,186 @@
+#footer{
+	@extend %clearfix;
+	width:100%;
+	position:relative;
+	opacity: 0;
+	margin:20px 0 0;
+	@media only screen and (max-height: 669px){
+		margin:0;
+	}
+	@include media('<=desktop'){
+		opacity: 1;
+	}
+	&.section-active{
+		opacity: 1;
+	}
+}
+
+.form-contact{
+	position:absolute;
+	right:50%;
+	top:50%;
+	width:600px;
+	padding:0 0 140px;
+	transform: translate(50%,-50%);
+	letter-spacing: 2px;
+	word-spacing: 1px;
+	@include media("<=desktop") {
+		width:52.08%;
+		position:relative;
+		right:auto;
+		top:auto;
+		transform: translate(0,0);
+		margin:0 auto;
+	}
+	@include media("<tablet") {
+		width: 81.25%;
+	}
+	.row{
+		overflow:hidden;
+		margin:0 0 40px;
+		@include media("<desktop") {
+			margin:0 0 30px;
+		}
+		@include media("<tablet") {
+			margin:0 0 20px;
+		}
+		@media only screen and (max-height: 799px){
+			margin:0 0 20px;
+		}
+		&.error{
+			textarea,
+			input[type="text"]{
+				color:$orange;
+				border-bottom:2px solid $orange;
+			}
+		}
+	}
+	input[type="text"],
+	input[type="email"]{
+		font-size:30px;
+		line-height:32px;
+		width:100%;
+		height:88px;
+		background:$dark-gray-2;
+		border-bottom:2px solid $gold;
+		color:rgba(255,255,255,.15);
+		@include set-placeholder-color(rgba(255,255,255,.15));
+		@include media("<desktop") {
+			font-size:24px;
+			line-height:26px;
+			height:66px;
+		}
+		@media only screen and (max-height: 799px){
+			font-size:24px;
+			line-height:26px;
+			height:66px;
+		}
+		@include media("<tablet") {
+			font-size:16px;
+			line-height:18px;
+			height:46px;
+		}
+		@media only screen and (max-height: 669px){
+			font-size:16px;
+			line-height:18px;
+			height:46px;
+		}
+		&.text-active,
+		&.focus{
+			color:$white;
+		}
+	}
+	textarea{
+		font-size:30px;
+		line-height:32px;
+		width:100%;
+		background:$dark-gray-2;
+		border-bottom:2px solid $gold;
+		color:rgba(255,255,255,.15);
+		@include set-placeholder-color(rgba(255,255,255,.15));
+		height: 278px;
+		max-width: 100%;
+		min-height: 278px;
+		resize:none;
+		padding:26px 20px;
+		@include media("<desktop") {
+			font-size:24px;
+			line-height:26px;
+			height: 180px;
+			min-height: 180px;
+		}
+		@media only screen and (max-height: 799px){
+			font-size:24px;
+			line-height:26px;
+			height: 180px;
+			min-height: 180px;
+		}
+		@include media("<tablet") {
+			font-size:16px;
+			line-height:18px;
+			height: 142px;
+			min-height: 142px;
+		}
+		@media only screen and (max-height: 669px){
+			font-size:16px;
+			line-height:18px;
+			height: 142px;
+			min-height: 142px;
+		}
+		&.text-active,
+		&.focus{
+			color:$white;
+		}
+	}
+	&.complete{
+		.progress-button[data-perspective] .content
+		{
+			background: $base-form-button-bg;
+		}
+	}
+}
+
+.social-networks{
+	position:absolute;
+	right:50%;
+	transform: translateX(50%);
+	width:100%;
+	bottom: 60px;
+	text-align:center;
+	letter-spacing:-4px;
+	font-size:0;
+	line-height:0;
+	overflow:hidden;
+	@include media("<tablet") {
+		bottom: 40px;
+	}
+	@media only screen and (max-height: 669px){
+		bottom:30px;
+	}
+	@extend %listreset;
+	li{
+		display:inline-block;
+		vertical-align:top;
+		margin:0 10px;
+	}
+	a{
+		display:block;
+		width:32px;
+		height:32px;
+		font-size:32px;
+		line-height:32px;
+		letter-spacing:normal;
+		color:$gold;
+		transition:opacity 0.3s ease;
+		@include media("<tablet") {
+			width:18px;
+			height:18px;
+			font-size:18px;
+			line-height:18px;
+		}
+		&:hover{
+			text-decoration:none;
+			opacity: .7;
+		}
+	}
+}

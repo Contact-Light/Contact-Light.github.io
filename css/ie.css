@@ -1,0 +1,11 @@
+.section .text{
+	transition:none;
+}
+
+.icon{
+	transition:none;
+}
+
+.section-active{
+	top:0 !important;
+}
