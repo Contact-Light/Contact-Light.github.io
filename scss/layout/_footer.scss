@@ -12,6 +12,12 @@
 	}
 	&.section-active{
 		opacity: 1;
+		.form-contact{
+			opacity: 1;
+		}
+		.icon{
+			opacity: 1;
+		}
 	}
 }
 
@@ -20,17 +26,15 @@
 	right:50%;
 	top:50%;
 	width:600px;
-	padding:0 0 140px;
+	padding:20px 0 140px;
 	transform: translate(50%,-50%);
 	letter-spacing: 2px;
 	word-spacing: 1px;
+	min-height: 500px;
+	opacity: 0;
+	transition:opacity 2s .2s ease;
 	@include media("<=desktop") {
 		width:52.08%;
-		position:relative;
-		right:auto;
-		top:auto;
-		transform: translate(0,0);
-		margin:0 auto;
 	}
 	@include media("<tablet") {
 		width: 81.25%;
@@ -60,30 +64,37 @@
 		font-size:30px;
 		line-height:32px;
 		width:100%;
-		height:88px;
+		height:66px;
 		background:$dark-gray-2;
 		border-bottom:2px solid $gold;
 		color:rgba(255,255,255,.15);
 		@include set-placeholder-color(rgba(255,255,255,.15));
+		&::-ms-clear{
+			display:none;
+		}
 		@include media("<desktop") {
 			font-size:24px;
 			line-height:26px;
-			height:66px;
 		}
 		@media only screen and (max-height: 799px){
 			font-size:24px;
 			line-height:26px;
 			height:66px;
 		}
+		@media only screen and (max-height: 799px) and (max-width: 767px){
+			font-size:16px;
+			line-height:18px;
+			height:44px;
+		}
 		@include media("<tablet") {
 			font-size:16px;
 			line-height:18px;
-			height:46px;
+			height:44px;
 		}
 		@media only screen and (max-height: 669px){
 			font-size:16px;
 			line-height:18px;
-			height:46px;
+			height:44px;
 		}
 		&.text-active,
 		&.focus{
@@ -132,12 +143,92 @@
 			color:$white;
 		}
 	}
-	&.complete{
-		.progress-button[data-perspective] .content
-		{
-			background: $base-form-button-bg;
+	.progress-button{
+		width:100%;
+		line-height:66px;
+		font-size:20px;
+		color:#0d0d0d;
+		margin:0;
+		padding:0;
+		border:none;
+		outline: none;
+		@media only screen and (max-height: 669px){
+			line-height:44px;
+			font-size:16px;
+		}
+		@media only screen and (max-height: 799px) and (max-width: 767px){
+			line-height:44px;
+			font-size:16px;
+		}
+		.progress{
+			background: $gold;
+		}
+		.progress-inner {
+			position: absolute;
+			left: 0;
+			background: $gold-2;
+		}
+		.content{
+			&:before,
+			&:after{
+				color:$gold-2;
+			}
 		}
 	}
+	.progress-button .content {
+		padding:0;
+		width:100%;
+		color:#0d0d0d;
+	}
+	&.complete{
+		.progress-button{
+			opacity: 1;
+		}
+	}
+}
+
+.progress-button .progress-wrap{
+	transform-style: none;
+}
+
+.progress-button[data-style="rotate-angle-bottom"] .progress{
+	transform: rotateX(-87deg);
+	-webkit-transform: rotateX(-87deg);
+	box-shadow: none;
+	@media only screen and (max-height: 669px){
+		transform: rotateX(-88deg);
+	}
+	@media only screen and (max-height: 799px) and (max-width: 767px){
+		transform: rotateX(-88deg);
+	}
+}
+
+.success-form .progress-button[data-style="rotate-angle-bottom"] .progress{
+	transform: rotateX(-87deg);
+	-webkit-transform: rotateX(-87deg);
+	box-shadow: none;
+	@include media("<tablet") {
+		transform: rotateX(-88deg);
+	}
+	@media only screen and (max-height: 669px){
+		transform: rotateX(-88deg);
+	}
+	@media only screen and (max-height: 799px) and (max-width: 767px){
+		transform: rotateX(-88deg);
+	}
+}
+
+.progress-button[data-style="rotate-angle-bottom"].state-loading .progress-wrap{
+	transform: rotateX(0deg);
+}
+
+.success-form .progress-button[data-style="rotate-angle-bottom"].state-loading .progress-wrap {
+	transform: rotateX(45deg);
+}
+
+.success-form .progress-button .progress-wrap{
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
 }
 
 .social-networks{
@@ -155,7 +246,7 @@
 		bottom: 40px;
 	}
 	@media only screen and (max-height: 669px){
-		bottom:30px;
+		bottom:15px;
 	}
 	@extend %listreset;
 	li{

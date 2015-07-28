@@ -2,8 +2,15 @@
 	overflow:hidden;
 	position:relative;
 	width:100%;
-	@include media('<=desktop'){
-		margin:100px 0;
+	padding:0 !important;
+	top:0 !important;
+	&.section-active{
+		.logo{
+			opacity: 1;
+		}
+		.icon{
+			opacity: 1;
+		}
 	}
 }
 
@@ -12,14 +19,11 @@
 	right:50%;
 	top:50%;
 	width:479px;
+	opacity: 0;
+	transition:opacity 2s .2s ease;
 	transform: translate(50%,-50%);
 	@include media("<=desktop") {
 		width:316px;
-		position:relative;
-		right:auto;
-		top:auto;
-		margin:0 auto 200px;
-		transform: translate(0,0);
 	}
 	@include media("<tablet") {
 		width:158px;
@@ -35,17 +39,11 @@
 	bottom: 80px;
 	color:$gold;
 	opacity: 0;
-	transition:opacity 0.2s 1s ease;
+	transition:opacity 2s .2s ease;
+	text-decoration:none;
 	@include media("<=desktop") {
 		width:44px;
 		height:44px;
-		transform: translateX(0);
-		position:relative;
-		right:auto;
-		bottom:auto;
-		margin:50px auto 0;
-		display:block;
-		opacity: 1;
 	}
 	@media only screen and (max-height: 799px){
 		bottom: 30px;
@@ -57,11 +55,16 @@
 	i{
 		font-size:66px;
 		display:block;
+		text-decoration:none;
 		@include media("<=desktop") {
 			font-size:44px;
 		}
 		@include media("<tablet") {
 			font-size:22px;
 		}
+	}
+	&:hover{
+		text-decoration:none;
+		color:$white;
 	}
 }

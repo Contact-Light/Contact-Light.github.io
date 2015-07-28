@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-g5aox1');
-	src:url('../fonts/icomoon.eot?#iefix-g5aox1') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?-g5aox1') format('truetype'),
-		url('../fonts/icomoon.woff?-g5aox1') format('woff'),
-		url('../fonts/icomoon.svg?-g5aox1#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?e8rjvn');
+	src:url('../fonts/icomoon.eot?#iefixe8rjvn') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?e8rjvn') format('truetype'),
+		url('../fonts/icomoon.woff?e8rjvn') format('woff'),
+		url('../fonts/icomoon.svg?e8rjvn#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,8 +23,8 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook:before {
-	content: "\e601";
+.icon-facebook1:before {
+	content: "\e608";
 }
 .icon-linkedin:before {
 	content: "\e602";
@@ -43,10 +43,4 @@
 }
 .icon-twitter:before {
 	content: "\e612";
-}
-.icon-checked:before {
-	content: "\e609";
-}
-.icon-check-1:before {
-	content: "\e600";
 }

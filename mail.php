@@ -1,16 +1,16 @@
 <?php
 	//****************************************
 	//edit here
-	$senderName = 'contactlight.co';                          
-	$senderEmail = 'noreply@contactlight.co';            
+	$senderName = 'WEB';                          
+	$senderEmail = 'site@example.com';            
 	$targetEmail = 'jamie@contactlight.co';         
-	$messageSubject = 'A new Contact Light enquiry';   
+	$messageSubject = 'Message from web-site';   
 	$redirectToReferer = true;                
 	$redirectURL = 'thankyou.html';               
 	//****************************************
 
 	// mail content
-	$ulname = $_POST['uname'];
+	$uname = $_POST['uname'];
 	$umail = $_POST['umail'];
 	$umessage = $_POST['umessage'];
 

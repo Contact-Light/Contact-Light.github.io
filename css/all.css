@@ -8,8 +8,8 @@
 
 @font-face {
 	font-family: "icomoon";
-	src: url("../fonts/icomoon.eot?-g5aox1");
-	src: url("../fonts/icomoon.eot?#iefix-g5aox1") format("embedded-opentype"), url("../fonts/icomoon.ttf?-g5aox1") format("truetype"), url("../fonts/icomoon.woff?-g5aox1") format("woff"), url("../fonts/icomoon.svg?-g5aox1#icomoon") format("svg");
+	src: url("../fonts/icomoon.eot?e8rjvn");
+	src: url("../fonts/icomoon.eot?#iefixe8rjvn") format("embedded-opentype"), url("../fonts/icomoon.ttf?e8rjvn") format("truetype"), url("../fonts/icomoon.woff?e8rjvn") format("woff"), url("../fonts/icomoon.svg?e8rjvn#icomoon") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -27,8 +27,8 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook:before {
-	content: "\e601";
+.icon-facebook1:before {
+	content: "\e608";
 }
 
 .icon-linkedin:before {
@@ -53,14 +53,6 @@
 
 .icon-twitter:before {
 	content: "\e612";
-}
-
-.icon-checked:before {
-	content: "\e609";
-}
-
-.icon-check-1:before {
-	content: "\e600";
 }
 
 #footer:after {
@@ -267,6 +259,16 @@ table {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
+	padding: 0 !important;
+	top: 0 !important;
+}
+
+#header.section-active .logo {
+	opacity: 1;
+}
+
+#header.section-active .icon {
+	opacity: 1;
 }
 
 .logo {
@@ -274,6 +276,9 @@ table {
 	right: 50%;
 	top: 50%;
 	width: 479px;
+	opacity: 0;
+	-webkit-transition: opacity 2s .2s ease;
+	transition: opacity 2s .2s ease;
 	-webkit-transform: translate(50%, -50%);
 	-ms-transform: translate(50%, -50%);
 	transform: translate(50%, -50%);
@@ -292,11 +297,18 @@ table {
 	opacity: 0;
 	-webkit-transition: opacity 2s .2s ease;
 	transition: opacity 2s .2s ease;
+	text-decoration: none;
 }
 
 .icon i {
 	font-size: 66px;
 	display: block;
+	text-decoration: none;
+}
+
+.icon:hover {
+	text-decoration: none;
+	color: #fff;
 }
 
 #footer {
@@ -310,17 +322,29 @@ table {
 	opacity: 1;
 }
 
+#footer.section-active .form-contact {
+	opacity: 1;
+}
+
+#footer.section-active .icon {
+	opacity: 1;
+}
+
 .form-contact {
 	position: absolute;
 	right: 50%;
 	top: 50%;
 	width: 600px;
-	padding: 0 0 140px;
+	padding: 20px 0 140px;
 	-webkit-transform: translate(50%, -50%);
 	-ms-transform: translate(50%, -50%);
 	transform: translate(50%, -50%);
 	letter-spacing: 2px;
 	word-spacing: 1px;
+	min-height: 500px;
+	opacity: 0;
+	-webkit-transition: opacity 2s .2s ease;
+	transition: opacity 2s .2s ease;
 }
 
 .form-contact .row {
@@ -339,7 +363,7 @@ table {
 	font-size: 30px;
 	line-height: 32px;
 	width: 100%;
-	height: 88px;
+	height: 66px;
 	background: #0d0d0d;
 	border-bottom: 2px solid #f1e597;
 	color: rgba(255, 255, 255, .15);
@@ -369,6 +393,11 @@ table {
 .form-contact input[type="text"].placeholder,
 .form-contact input[type="email"].placeholder {
 	color: rgba(255, 255, 255, .15);
+}
+
+.form-contact input[type="text"]::-ms-clear,
+.form-contact input[type="email"]::-ms-clear {
+	display: none;
 }
 
 .form-contact input[type="text"].text-active,
@@ -418,9 +447,72 @@ table {
 	color: #fff;
 }
 
-.form-contact.complete
-.progress-button[data-perspective] .content {
+.form-contact .progress-button {
+	width: 100%;
+	line-height: 66px;
+	font-size: 20px;
+	color: #0d0d0d;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.form-contact .progress-button .progress {
 	background: #f1e597;
+}
+
+.form-contact .progress-button .progress-inner {
+	position: absolute;
+	left: 0;
+	background: #bdb166;
+}
+
+.form-contact .progress-button .content:before,
+.form-contact .progress-button .content:after {
+	color: #bdb166;
+}
+
+.form-contact .progress-button .content {
+	padding: 0;
+	width: 100%;
+	color: #0d0d0d;
+}
+
+.form-contact.complete .progress-button {
+	opacity: 1;
+}
+
+.progress-button .progress-wrap {
+	-webkit-transform-style: none;
+	transform-style: none;
+}
+
+.progress-button[data-style="rotate-angle-bottom"] .progress {
+	transform: rotateX(-87deg);
+	-webkit-transform: rotateX(-87deg);
+	box-shadow: none;
+}
+
+.success-form .progress-button[data-style="rotate-angle-bottom"] .progress {
+	transform: rotateX(-87deg);
+	-webkit-transform: rotateX(-87deg);
+	box-shadow: none;
+}
+
+.progress-button[data-style="rotate-angle-bottom"].state-loading .progress-wrap {
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.success-form .progress-button[data-style="rotate-angle-bottom"].state-loading .progress-wrap {
+	-webkit-transform: rotateX(45deg);
+	transform: rotateX(45deg);
+}
+
+.success-form .progress-button .progress-wrap {
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
 }
 
 .social-networks {
@@ -459,549 +551,6 @@ table {
 .social-networks a:hover {
 	text-decoration: none;
 	opacity: .7;
-}
-
-/* General styles for all types of buttons */
-
-.progress-button {
-	position: relative;
-	display: inline-block;
-	padding: 0 60px;
-	outline: none;
-	border: none;
-	background: rgba(241, 229, 151, .5);
-	color: #0d0d0d;
-	text-transform: uppercase;
-	line-height: 88px;
-	font-size: 20px;
-	width: 100%;
-}
-
-.progress-button .content {
-	position: relative;
-	display: block;
-}
-
-.progress-button .content:before,
-.progress-button .content:after {
-	position: absolute;
-	right: 20px;
-	color: #0e7138;
-	font-family: "icomoon";
-	opacity: 0;
-	-webkit-transition: opacity .3s .3s;
-	transition: opacity .3s .3s;
-	color: #bdb166;
-}
-
-.progress-button .content:before {
-	content: "\e600";
-}
-
-.progress-button .content:after {
-	content: "\e601";
-}
-
-.progress-button .progress {
-	background: #f1e597;
-}
-
-.progress-button .progress-inner {
-	position: absolute;
-	left: 0;
-	background: #bdb166;
-}
-
-.progress-button[disabled],
-.progress-button[disabled].state-loading {
-	cursor: default;
-}
-
-.progress-button.state-success .content::before,
-.progress-button.state-error .content::after {
-	opacity: 1;
-}
-
-.notransition {
-	-webkit-transition: none !important;
-	transition: none !important;
-}
-
-.progress-button[data-horizontal] .progress-inner {
-	top: 0;
-	width: 0;
-	height: 100%;
-	-webkit-transition: width .3s, opacity .3s;
-	transition: width .3s, opacity .3s;
-}
-
-.progress-button[data-vertical] .progress-inner {
-	bottom: 0;
-	width: 100%;
-	height: 0;
-	-webkit-transition: height .3s, opacity .3s;
-	transition: height .3s, opacity .3s;
-}
-
-/* Necessary 3d styles for buttons with perspective */
-
-.progress-button[data-perspective] {
-	position: relative;
-	display: inline-block;
-	padding: 0;
-	background: transparent;
-	-webkit-perspective: 900px;
-	perspective: 900px;
-	vertical-align: middle;
-}
-
-.progress-button[data-perspective] .content {
-	padding: 0 60px;
-	background: rgba(241, 229, 151, .5);
-}
-
-.progress-button[data-perspective] .progress-wrap {
-	display: block;
-	-webkit-transition: -webkit-transform .2s;
-	transition: transform .2s;
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-}
-
-.progress-button[data-perspective] .content,
-.progress-button[data-perspective] .progress {
-	outline: 1px solid transparent; /* Smoothen jagged edges in FF */
-}
-
-.progress-button[data-style="fill"][data-horizontal] {
-	overflow: hidden;
-}
-
-.progress-button[data-style="fill"][data-horizontal] .content {
-	z-index: 10;
-	-webkit-transition: -webkit-transform .3s;
-	transition: transform .3s;
-}
-
-.progress-button[data-style="fill"][data-horizontal] .content::before,
-.progress-button[data-style="fill"][data-horizontal] .content::after {
-	top: 100%;
-	right: auto;
-	left: 50%;
-	-webkit-transition: opacity .3s;
-	transition: opacity .3s;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-}
-
-.progress-button[data-style="fill"][data-horizontal].state-success .content,
-.progress-button[data-style="fill"][data-horizontal].state-error .content {
-	-webkit-transform: translateY(-100%);
-	-ms-transform: translateY(-100%);
-	transform: translateY(-100%);
-}
-
-.progress-button[data-style="fill"][data-vertical] {
-	overflow: hidden;
-}
-
-.progress-button[data-style="fill"][data-vertical] .content {
-	z-index: 10;
-	-webkit-transition: -webkit-transform .3s;
-	transition: transform .3s;
-}
-
-.progress-button[data-style="fill"][data-vertical] .content::before,
-.progress-button[data-style="fill"][data-vertical] .content::after {
-	top: 100%;
-	right: auto;
-	left: 50%;
-	-webkit-transition: opacity .3s;
-	transition: opacity .3s;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-}
-
-.progress-button[data-style="fill"][data-vertical].state-success .content,
-.progress-button[data-style="fill"][data-vertical].state-error .content {
-	-webkit-transform: translateY(-100%);
-	-ms-transform: translateY(-100%);
-	transform: translateY(-100%);
-}
-
-.progress-button[data-style="shrink"] {
-	/* common for horizontal and vertical */
-	overflow: hidden;
-	-webkit-transition: -webkit-transform .2s;
-	transition: transform .2s;
-}
-
-.progress-button[data-style="shrink"][data-horizontal] .content {
-	-webkit-transition: opacity .3s, -webkit-transform .3s;
-	transition: opacity .3s, transform .3s;
-}
-
-.progress-button[data-style="shrink"][data-horizontal] .content::before,
-.progress-button[data-style="shrink"][data-horizontal] .content::after {
-	top: 100%;
-	right: auto;
-	left: 50%;
-	-webkit-transition: opacity .3s;
-	transition: opacity .3s;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-}
-
-.progress-button[data-style="shrink"][data-horizontal].state-loading {
-	-webkit-transform: scaleY(.3);
-	-ms-transform: scaleY(.3);
-	transform: scaleY(.3);
-}
-
-.progress-button[data-style="shrink"][data-horizontal].state-loading .content {
-	opacity: 0;
-}
-
-.progress-button[data-style="shrink"][data-horizontal].state-success .content,
-.progress-button[data-style="shrink"][data-horizontal].state-error .content {
-	-webkit-transform: translateY(-100%);
-	-ms-transform: translateY(-100%);
-	transform: translateY(-100%);
-}
-
-.progress-button[data-style="shrink"][data-vertical] .content {
-	-webkit-transition: opacity .3s, -webkit-transform .3s;
-	transition: opacity .3s, transform .3s;
-}
-
-.progress-button[data-style="shrink"][data-vertical] .content::before,
-.progress-button[data-style="shrink"][data-vertical] .content::after {
-	top: 100%;
-	right: auto;
-	left: 50%;
-	-webkit-transition: opacity .3s;
-	transition: opacity .3s;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-}
-
-.progress-button[data-style="shrink"][data-vertical].state-loading {
-	-webkit-transform: scaleX(.1);
-	-ms-transform: scaleX(.1);
-	transform: scaleX(.1);
-}
-
-.progress-button[data-style="shrink"][data-vertical].state-loading .content {
-	opacity: 0;
-}
-
-.progress-button[data-style="shrink"][data-vertical].state-success .content,
-.progress-button[data-style="shrink"][data-vertical].state-error .content {
-	-webkit-transform: translateY(-100%);
-	-ms-transform: translateY(-100%);
-	transform: translateY(-100%);
-}
-
-.progress-button[data-style="rotate-angle-bottom"] .progress {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	height: 20px;
-	-webkit-transform: rotateX(-87deg);
-	transform: rotateX(-87deg);
-	-webkit-transform-origin: 50% 0;
-	-ms-transform-origin: 50% 0;
-	transform-origin: 50% 0;
-}
-
-.success-form .progress-button[data-style="rotate-angle-bottom"].state-loading .progress-wrap {
-	-webkit-transform: rotateX(45deg);
-	transform: rotateX(45deg);
-}
-
-.progress-button[data-style="rotate-angle-top"] .progress {
-	position: absolute;
-	bottom: 100%;
-	left: 0;
-	width: 100%;
-	height: 20px;
-	box-shadow: 0 1px 0 #148544;
-	-webkit-transform: rotateX(90deg);
-	transform: rotateX(90deg);
-	-webkit-transform-origin: 50% 100%;
-	-ms-transform-origin: 50% 100%;
-	transform-origin: 50% 100%;
-}
-
-.progress-button[data-style="rotate-angle-top"].state-loading .progress-wrap {
-	-webkit-transform: rotateX(-45deg);
-	transform: rotateX(-45deg);
-}
-
-.progress-button[data-style="rotate-angle-left"] .progress {
-	position: absolute;
-	top: 0;
-	right: 100%;
-	width: 20px;
-	height: 100%;
-	box-shadow: 1px 0 0 #148544;
-	-webkit-transform: rotateY(-90deg);
-	transform: rotateY(-90deg);
-	-webkit-transform-origin: 100% 50%;
-	-ms-transform-origin: 100% 50%;
-	transform-origin: 100% 50%;
-}
-
-.progress-button[data-style="rotate-angle-left"].state-loading .progress-wrap {
-	-webkit-transform: rotateY(45deg);
-	transform: rotateY(45deg);
-}
-
-.progress-button[data-style="rotate-angle-right"] .progress {
-	position: absolute;
-	top: 0;
-	left: 100%;
-	width: 20px;
-	height: 100%;
-	box-shadow: -1px 0 0 #148544;
-	-webkit-transform: rotateY(90deg);
-	transform: rotateY(90deg);
-	-webkit-transform-origin: 0 50%;
-	-ms-transform-origin: 0 50%;
-	transform-origin: 0 50%;
-}
-
-.progress-button[data-style="rotate-angle-right"].state-loading .progress-wrap {
-	-webkit-transform: rotateY(-45deg);
-	transform: rotateY(-45deg);
-}
-
-.progress-button[data-style="rotate-side-down"] .progress {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	height: 20px;
-	-webkit-transform: rotateX(-90deg);
-	transform: rotateX(-90deg);
-	-webkit-transform-origin: 50% 0;
-	-ms-transform-origin: 50% 0;
-	transform-origin: 50% 0;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.progress-button[data-style="rotate-side-down"].state-loading .progress-wrap {
-	-webkit-transform: rotateX(90deg) translateZ(10px);
-	transform: rotateX(90deg) translateZ(10px);
-}
-
-.progress-button[data-style="rotate-side-up"] .progress {
-	position: absolute;
-	bottom: 100%;
-	left: 0;
-	width: 100%;
-	height: 20px;
-	-webkit-transform: rotateX(90deg);
-	transform: rotateX(90deg);
-	-webkit-transform-origin: 50% 100%;
-	-ms-transform-origin: 50% 100%;
-	transform-origin: 50% 100%;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.progress-button[data-style="rotate-side-up"].state-loading .progress-wrap {
-	-webkit-transform: rotateX(-90deg) translateZ(10px);
-	transform: rotateX(-90deg) translateZ(10px);
-}
-
-.progress-button[data-style="rotate-side-left"] .progress-wrap {
-	-webkit-transform-origin: 0 50%;
-	-ms-transform-origin: 0 50%;
-	transform-origin: 0 50%;
-}
-
-.progress-button[data-style="rotate-side-left"] .progress {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 20px;
-	height: 100%;
-	-webkit-transform: rotateY(90deg);
-	transform: rotateY(90deg);
-	-webkit-transform-origin: 0 50%;
-	-ms-transform-origin: 0 50%;
-	transform-origin: 0 50%;
-}
-
-.progress-button[data-style="rotate-side-left"].state-loading .progress-wrap {
-	-webkit-transform: translateX(50%) rotateY(90deg) translateZ(10px);
-	transform: translateX(50%) rotateY(90deg) translateZ(10px);
-}
-
-.progress-button[data-style="rotate-side-right"] .progress-wrap {
-	-webkit-transform-origin: 100% 50%;
-	-ms-transform-origin: 100% 50%;
-	transform-origin: 100% 50%;
-}
-
-.progress-button[data-style="rotate-side-right"] .progress {
-	position: absolute;
-	top: 0;
-	left: 100%;
-	width: 20px;
-	height: 100%;
-	-webkit-transform: rotateY(90deg);
-	transform: rotateY(90deg);
-	-webkit-transform-origin: 0 50%;
-	-ms-transform-origin: 0 50%;
-	transform-origin: 0 50%;
-}
-
-.progress-button[data-style="rotate-side-right"].state-loading .progress-wrap {
-	-webkit-transform: translateX(-50%) rotateY(-90deg) translateZ(10px);
-	transform: translateX(-50%) rotateY(-90deg) translateZ(10px);
-}
-
-.progress-button[data-style="rotate-back"] .progress-wrap {
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-}
-
-.progress-button[data-style="rotate-back"] .content {
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.progress-button[data-style="rotate-back"] .progress {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	-webkit-transform: rotateX(-180deg);
-	transform: rotateX(-180deg);
-	-webkit-transform-origin: 50% 0;
-	-ms-transform-origin: 50% 0;
-	transform-origin: 50% 0;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.progress-button[data-style="rotate-back"].state-loading .progress-wrap {
-	-webkit-transform: rotateX(180deg) scaleX(.6) scaleY(.3);
-	transform: rotateX(180deg) scaleX(.6) scaleY(.3);
-}
-
-.progress-button[data-style="flip-open"] .content {
-	z-index: 10;
-	-webkit-transition: -webkit-transform .2s;
-	transition: transform .2s;
-	-webkit-transform-origin: 50% 0;
-	-ms-transform-origin: 50% 0;
-	transform-origin: 50% 0;
-}
-
-.progress-button[data-style="flip-open"] .progress {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.progress-button[data-style="flip-open"].state-loading .content {
-	-webkit-transform: rotateX(45deg);
-	transform: rotateX(45deg);
-}
-
-.progress-button[data-style="slide-down"] {
-	padding: 0;
-	overflow: visible;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.progress-button[data-style="slide-down"] .content {
-	z-index: 10;
-	padding: 0 60px;
-	background: #1d9650;
-}
-
-.progress-button[data-style="slide-down"] .progress {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	-webkit-transition: -webkit-transform .2s;
-	transition: transform .2s;
-}
-
-.progress-button[data-style="slide-down"].state-loading .progress {
-	-webkit-transform: translateY(10px);
-	-ms-transform: translateY(10px);
-	transform: translateY(10px);
-}
-
-.progress-button[data-style="move-up"] {
-	padding: 0;
-	overflow: visible;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.progress-button[data-style="move-up"] .content {
-	z-index: 10;
-	padding: 0 60px;
-	background: #1d9650;
-	-webkit-transition: -webkit-transform .2s;
-	transition: transform .2s;
-}
-
-.progress-button[data-style="move-up"] .progress {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.progress-button[data-style="move-up"].state-loading .content {
-	-webkit-transform: translateY(-10px);
-	-ms-transform: translateY(-10px);
-	transform: translateY(-10px);
-}
-
-.progress-button[data-style="top-line"] .progress-inner {
-	height: 3px;
-}
-
-.progress-button[data-style="top-line"] .content::before,
-.progress-button[data-style="top-line"] .content::after {
-	right: auto;
-	left: 100%;
-	margin-left: 25px;
-}
-
-.progress-button[data-style="lateral-lines"] .progress-inner {
-	width: 100%;
-	border-right: 3px solid #0e7138;
-	border-left: 3px solid #0e7138;
-	background: transparent;
-}
-
-.progress-button[data-style="lateral-lines"] .content::before,
-.progress-button[data-style="lateral-lines"] .content::after {
-	right: auto;
-	left: 100%;
-	margin-left: 25px;
 }
 
 body,
@@ -1118,7 +667,7 @@ html {
 	opacity: 0;
 	position: relative;
 	overflow: hidden;
-	padding: 20px 0 100px;
+	padding: 20px 0;
 	width: 100%;
 }
 
@@ -1232,40 +781,14 @@ html {
 	}
 }
 
-@media only screen and (max-width: 1280px) and (max-height: 800px) {
-	.progress-button {
-		line-height: 66px;
-	}
-}
-
 @media (max-width: 1024px) {
-	#header {
-		margin: 100px 0;
-	}
-
 	.logo {
 		width: 316px;
-		position: relative;
-		right: auto;
-		top: auto;
-		margin: 0 auto 200px;
-		-webkit-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		transform: translate(0, 0);
 	}
 
 	.icon {
 		width: 44px;
 		height: 44px;
-		-webkit-transform: translateX(0);
-		-ms-transform: translateX(0);
-		transform: translateX(0);
-		position: relative;
-		right: auto;
-		bottom: auto;
-		margin: 50px auto 0;
-		display: block;
-		opacity: 1;
 	}
 
 	.icon i {
@@ -1278,18 +801,6 @@ html {
 
 	.form-contact {
 		width: 52.08%;
-		position: relative;
-		right: auto;
-		top: auto;
-		-webkit-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		transform: translate(0, 0);
-		margin: 0 auto;
-	}
-
-	body,
-	html {
-		overflow-y: visible;
 	}
 
 	.section {
@@ -1300,18 +811,6 @@ html {
 		font-size: 16px;
 		line-height: 30px;
 		width: 52.08%;
-		position: relative;
-		margin: 40px auto 200px;
-		-webkit-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		transform: translate(0, 0);
-		right: auto;
-		top: auto;
-		opacity: 1;
-	}
-
-	.win-height {
-		height: auto !important;
 	}
 }
 
@@ -1324,7 +823,6 @@ html {
 	.form-contact input[type="email"] {
 		font-size: 24px;
 		line-height: 26px;
-		height: 66px;
 	}
 
 	.form-contact textarea {
@@ -1333,9 +831,29 @@ html {
 		height: 180px;
 		min-height: 180px;
 	}
+}
 
-	.progress-button {
-		line-height: 66px;
+@media only screen and (max-height: 799px) and (max-width: 767px) {
+	.form-contact input[type="text"],
+	.form-contact input[type="email"] {
+		font-size: 16px;
+		line-height: 18px;
+		height: 44px;
+	}
+
+	.form-contact .progress-button {
+		line-height: 44px;
+		font-size: 16px;
+	}
+
+	.progress-button[data-style="rotate-angle-bottom"] .progress {
+		-webkit-transform: rotateX(-88deg);
+		transform: rotateX(-88deg);
+	}
+
+	.success-form .progress-button[data-style="rotate-angle-bottom"] .progress {
+		-webkit-transform: rotateX(-88deg);
+		transform: rotateX(-88deg);
 	}
 }
 
@@ -1365,7 +883,7 @@ html {
 	.form-contact input[type="email"] {
 		font-size: 16px;
 		line-height: 18px;
-		height: 46px;
+		height: 44px;
 	}
 
 	.form-contact textarea {
@@ -1373,6 +891,11 @@ html {
 		line-height: 18px;
 		height: 142px;
 		min-height: 142px;
+	}
+
+	.success-form .progress-button[data-style="rotate-angle-bottom"] .progress {
+		-webkit-transform: rotateX(-88deg);
+		transform: rotateX(-88deg);
 	}
 
 	.social-networks {
@@ -1384,16 +907,6 @@ html {
 		height: 18px;
 		font-size: 18px;
 		line-height: 18px;
-	}
-
-	.progress-button {
-		line-height: 46px;
-		font-size: 16px;
-	}
-
-	.progress-button[data-style="rotate-angle-bottom"] .progress {
-		-webkit-transform: rotateX(-88deg);
-		transform: rotateX(-88deg);
 	}
 
 	.section .text {
@@ -1436,7 +949,7 @@ html {
 	.form-contact input[type="email"] {
 		font-size: 16px;
 		line-height: 18px;
-		height: 46px;
+		height: 44px;
 	}
 
 	.form-contact textarea {
@@ -1446,8 +959,23 @@ html {
 		min-height: 142px;
 	}
 
+	.form-contact .progress-button {
+		line-height: 44px;
+		font-size: 16px;
+	}
+
+	.progress-button[data-style="rotate-angle-bottom"] .progress {
+		-webkit-transform: rotateX(-88deg);
+		transform: rotateX(-88deg);
+	}
+
+	.success-form .progress-button[data-style="rotate-angle-bottom"] .progress {
+		-webkit-transform: rotateX(-88deg);
+		transform: rotateX(-88deg);
+	}
+
 	.social-networks {
-		bottom: 30px;
+		bottom: 15px;
 	}
 }
-
+
