@@ -1,10 +1,10 @@
 <?php
 	//****************************************
 	//edit here
-	$senderName = 'WEB';                          
-	$senderEmail = 'site@example.com';            
+	$senderName = 'contactlight.co';                          
+	$senderEmail = 'noreply@contactlight.co';            
 	$targetEmail = 'jamie@contactlight.co';         
-	$messageSubject = 'Message from web-site';   
+	$messageSubject = 'Enquiry from Contact Light website';   
 	$redirectToReferer = true;                
 	$redirectURL = 'thankyou.html';               
 	//****************************************
