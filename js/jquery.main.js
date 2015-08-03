@@ -1,7 +1,6 @@
 // page init
 jQuery(function() {
 	initInputs();
-	initValidation();
 	initScrollPage();
 	jQuery('input, textarea').placeholder();
 });
@@ -95,120 +94,6 @@ function initInputs() {
 	});
 }
 
-// form validation function
-function initValidation() {
-	var errorClass = 'error';
-	var successClass = 'success';
-	var formErrorClass = 'error-form';
-	var successFormClass = 'success-form';
-	var completeClass = 'complete';
-	var regEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-	var regPhone = /^[0-9 /\\]+$/;
-
-	jQuery('form.validate-form').each(function() {
-		var form = $(this);
-		var successFlag = true;
-		var inputs = form.find('input:text, textarea, select');
-		// form validation function
-		function validateForm() {
-			successFlag = true;
-			form.removeClass(formErrorClass);
-			inputs.each(checkField);
-
-			if (successFlag) {
-				return true;
-			} else {
-				form.addClass(formErrorClass);
-				return false;
-			}
-		}
-
-		inputs.each(function(ind) {
-			var field = jQuery(this);
-			field.attr('title', field.val());
-		});
-
-
-		// check all fields are filled
-		function checkFields() {
-			var lengthCount = 0;
-			inputs.each(function(ind) {
-				var field = jQuery(this);
-
-				if (field.prop('title') !== field.val() && field.val().length > 0) {
-					lengthCount++;
-					if (lengthCount === inputs.length) {
-						form.addClass(completeClass);
-					} else {
-						form.removeClass(completeClass);
-					}
-				}
-			});
-		}
-
-		inputs.on('keyup focus', checkFields);
-		// check field
-		function checkField(i, obj) {
-			var currentObject = $(obj);
-			var currentParent = currentObject.parents('div.row');
-			// not empty fields
-			if (currentObject.hasClass('required')) {
-				setState(currentParent, currentObject, !currentObject.val().length || currentObject.val() === currentObject.prop('title'));
-			}
-			// correct email fields
-			if (currentObject.hasClass('required-email')) {
-				setState(currentParent, currentObject, !regEmail.test(currentObject.val()));
-			}
-			// correct number fields
-			if (currentObject.hasClass('required-number')) {
-				setState(currentParent, currentObject, !regPhone.test(currentObject.val()));
-			}
-			// something selected
-			if (currentObject.hasClass('required-select')) {
-				setState(currentParent, currentObject, currentObject.get(0).selectedIndex === 0);
-			}
-		}
-		// set state
-		function setState(hold, field, error) {
-			hold.removeClass(errorClass).removeClass(successClass);
-			if (error) {
-				hold.addClass(errorClass);
-				field.one('focus', function() { hold.removeClass(errorClass).removeClass(successClass);});
-				successFlag = false;
-			} else {
-				hold.addClass(successClass);
-			}
-		}
-
-		form.find('button[type="submit"]').on('click', function() {
-			form.submit();
-		});
-
-		// form event handlers
-		form.on('submit', function(e) {
-			var validateSuccess = validateForm();
-			if (validateSuccess) {
-				// ajax send form
-				jQuery.ajax({
-					url: form.attr('action'),
-					type: form.attr('method'),
-					data: form.serialize(),
-					success: function() {
-						// show success message and reset form
-						form.addClass(successFormClass);
-						form.get(0).reset();
-						PlaceholderInput.refreshAllInputs();
-					},
-					error: function() {
-						console.log('Error');
-					}
-				});
-				e.preventDefault();
-			}
-			return validateSuccess;
-		});
-	});
-}
 
 // full page init
 function initScrollPage() {
