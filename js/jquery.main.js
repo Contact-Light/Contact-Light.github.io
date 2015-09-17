@@ -1,9 +1,9 @@
-// page init
-jQuery(function() {
-	initInputs();
+$(function() {
+    initInputs();
 	initScrollPage();
 	jQuery('input, textarea').placeholder();
 });
+
 
 /*
  * Browser platform detection
