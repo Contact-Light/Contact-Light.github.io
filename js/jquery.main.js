@@ -634,6 +634,11 @@ function initScrollPage() {
 	jQuery(window).on('resize orientationchange', resizeHandler);
 }());
 
+$(function() {
+    if (document.location.href.indexOf('#contact') > -1) {
+		 $("body").moveTo(4);
+    }
+});
 
 /* ===========================================================
  * jquery-onepage-scroll.js v1.3.1

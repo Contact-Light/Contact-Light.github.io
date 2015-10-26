@@ -255,6 +255,106 @@ table {
 	max-width: none;
 }
 
+/* SITE HEADER */
+
+	.siteHeader {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		border-bottom: 1px solid rgba(255,255,255,0.1);
+		overflow: hidden;
+		padding: 50px;
+		padding-bottom: 38px;
+		z-index: 9999;
+		background: rgba(0,0,0,0.35);
+	}
+
+	.headerLogo {
+		width: auto;
+		height: 50px;
+		margin-top: -10px;
+		float: left;
+		display: block;
+		overflow: hidden;
+	}
+
+	.headerLogo img {
+		width: auto;
+		height: 100%;
+		margin: 0;
+		display: block;
+	}
+
+	.headerNav {
+		float: right;
+		list-style: none;
+		overflow: hidden;
+		margin: 0;
+		display: block;
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+		-webkit-margin-start: 0;
+		-webkit-margin-end: 0;
+		-webkit-padding-start: 0;
+		margin-top: -2px;
+	}
+
+	.headerNav li {
+		float: left;
+		display: block;
+		margin-left: 40px;
+	}
+
+	.headerNav li:first-child {
+		margin-left: 0px;
+	}
+
+	.headerNav a {
+		color: #F6E698;
+		font-size: 14px;
+		line-height: 14px;
+		text-transform: uppercase;
+	}
+
+	.headerNav a:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.headerNav a.current,
+	.headerNav a.current:hover {
+		color: #fff;
+	}
+
+	@media only screen and (max-width: 750px) {
+
+		.siteHeader {
+			padding: 15px 0px;
+		}
+
+		.headerLogo {
+			display: none;
+		}
+
+		.headerNav {
+			float: none;
+			width: 100%;
+			margin: 0;
+			text-align: center;
+		}
+
+		.headerNav li {
+			float: none;
+			margin-left: 5px;
+			margin-right: 5px;
+			display: inline-block;
+		}
+
+	}
+
+/* END SITE HEADER */
+
 #header {
 	overflow: hidden;
 	position: relative;
@@ -282,6 +382,26 @@ table {
 	-webkit-transform: translate(50%, -50%);
 	-ms-transform: translate(50%, -50%);
 	transform: translate(50%, -50%);
+}
+
+.desktopLogo {
+	display: block;
+}
+
+.mobileLogo {
+	display: none;
+}
+
+@media only screen and (max-width: 750px) {
+
+	.mobileLogo {
+		display: block;
+	}
+
+	.desktopLogo {
+		display: none;
+	}
+
 }
 
 .icon {
@@ -743,4 +863,4 @@ html {
 		margin: 0;
 	}
 }
-
+
