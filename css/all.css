@@ -384,6 +384,14 @@ table {
 	transform: translate(50%, -50%);
 }
 
+@media only screen and (max-height: 800px) {
+
+	.logo {
+		width: 280px;
+	}
+
+}
+
 .desktopLogo {
 	display: block;
 }
