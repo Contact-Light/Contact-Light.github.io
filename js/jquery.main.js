@@ -640,6 +640,12 @@ $(function() {
     }
 });
 
+$(document).ready(function(){
+	$('.launchContactArea').click(function(){
+		$('body').moveTo(4);
+	});
+});
+
 /* ===========================================================
  * jquery-onepage-scroll.js v1.3.1
  * ===========================================================

@@ -273,7 +273,8 @@ table {
 	.headerLogo {
 		width: auto;
 		height: 50px;
-		margin-top: -10px;
+		margin-top: -5px;
+		margin-bottom: 4px;
 		float: left;
 		display: block;
 		overflow: hidden;
@@ -297,7 +298,7 @@ table {
 		-webkit-margin-start: 0;
 		-webkit-margin-end: 0;
 		-webkit-padding-start: 0;
-		margin-top: -2px;
+		margin-top: -1px;
 	}
 
 	.headerNav li {
