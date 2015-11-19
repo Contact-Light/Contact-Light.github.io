@@ -7,6 +7,31 @@
 	}
 
 /* Body */
+            
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    
+    @-o-keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
 
 	body {
 		background-color: #171817;
@@ -18,6 +43,27 @@
 		-moz-font-smoothing: antialiased;
 		font-smoothing: antialiased;
 		font-family: 'Brandon Grotesque', helvetica, arial, sans-serif;
+
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: fadeIn;
+        -moz-animation-name: fadeIn;
+        -ms-animation-name: fadeIn;
+        -o-animation-name: fadeIn;
+        animation-name: fadeIn;
+        -webkit-animation-duration: 0.75s;
+        -moz-animation-duration: 0.75s;
+        -ms-animation-duration: 0.75s;
+        -o-animation-duration: 0.75s;
+        animation-duration: 0.75s;
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        -ms-animation-delay: 1s;
+        -o-animation-delay: 1s;
+        animation-delay: 1s;
 	}
 
 /* Header */
