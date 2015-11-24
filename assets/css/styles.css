@@ -348,7 +348,7 @@
 
 				.bigTitles {
 					margin-top: 40px;
-					margin-bottom: 10px;
+					margin-bottom: 60px;
 				}
 
 			}
@@ -457,13 +457,9 @@
 
 		@media only screen and (max-width: 1000px) {
 
-			.apps {
-				margin-bottom: 60px;
-			}
-
 			.apps li {
 				width: 50%;
-				margin-top: 60px;
+				margin-bottom: 60px;
 			}
 
 			.apps li.more {
@@ -516,6 +512,21 @@
 			margin-right: auto;
 		}
 
+		@media only screen and (max-width: 800px) {
+
+			.contactContentContainer {
+				position: relative;
+				top: 0;
+				height: auto;
+				margin-top: 0;
+			}
+
+			.contactContent {
+				padding: 30px;
+			}
+
+		}
+
 		/* Title */
 
 			.contactContent .bigTitles {
@@ -548,6 +559,24 @@
 				transition: 0.4s;
 			}
 
+			@media only screen and (max-width: 800px) {
+
+				.socialIcons {
+					margin-bottom: 10px;
+				}
+
+				.socialIcons li {
+					margin-bottom: 20px;
+				}
+
+				.socialIcons a {
+					width: 50px;
+					height: 50px;
+					background-size: 50px 50px;
+				}
+
+			}
+
 			.socialIcons a:hover {
 				opacity: 0.5;
 			}
@@ -573,6 +602,14 @@
 				left: 0;
 				right: 0;
 				bottom: 0;
+			}
+
+			@media only screen and (max-width: 800px) {
+
+				.footerContainer.contactPage {
+					position: relative;
+				}
+
 			}
 
 /* Footer */
@@ -612,6 +649,16 @@
 			float: left;
 		}
 
+		@media only screen and (max-width: 800px) {
+
+			.copyright {
+				float: none;
+				width: 100%;
+				text-align: center;
+			}
+
+		}
+
 	/* Nav */
 
 		.footerNav {
@@ -647,8 +694,22 @@
 
 		@media only screen and (max-width: 800px) {
 
+			.footerNav {
+				float: none;
+				width: 100%;
+				text-align: center;
+				margin-top: 15px;
+			}
+
 			.footerNav li {
-				margin-left: 30px;
+				float: none;
+				margin-left: 15px;
+				margin-right: 15px;
+				display: inline-block;
+			}
+
+			.footerNav li:first-child {
+				margin-left: 15px;
 			}
 
 		}
