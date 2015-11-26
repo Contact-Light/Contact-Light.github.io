@@ -456,7 +456,8 @@
 		@media only screen and (max-width: 800px) {
 
 			.container {
-				margin-top: 80px;
+				margin-top: 30px;
+				padding: 0px 30px;
 			}
 
 		}
@@ -475,6 +476,14 @@
 			padding: 60px;
 		}
 
+		@media only screen and (max-width: 800px) {
+
+			.latest-post__inner {
+				padding: 30px;
+			}
+
+		}
+
 		.post {
 			border-top: 0;
 			padding-top: 0px;
@@ -483,6 +492,14 @@
 		.post__inner {
 			padding-top: 0;
 			padding-bottom: 60px;
+		}
+
+		@media only screen and (max-width: 800px) {
+
+			.post__inner {
+				padding-bottom: 30px;
+			}
+
 		}
 
 		/* Title */
@@ -537,6 +554,14 @@
 				text-align: center;
 				margin-top: 60px;
 			}
+
+			@media only screen and (max-width: 800px) {
+
+				.post-tags {
+					margin-top: 30px;
+				}
+
+			}
 			
 			.post-tags i {
 				display: none;
@@ -583,6 +608,14 @@
 				text-align: center;
 			}
 
+			@media only screen and (max-width: 800px) {
+
+				.customTools {
+					margin-top: 30px;
+				}
+
+			}
+
 			.customTools li {
 				display: inline-block;
 				margin-left: 10px;
@@ -603,6 +636,18 @@
 			.post-footer__inner {
 				border: 1px solid #F6E698;
 				padding: 60px;
+			}
+
+			@media only screen and (max-width: 800px) {
+
+				.post-footer {
+					margin-top: 30px;
+				}
+
+				.post-footer__inner {
+					padding: 30px;
+				}
+
 			}
 
 			.author-bio h3 {
