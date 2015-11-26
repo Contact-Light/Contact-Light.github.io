@@ -21,13 +21,13 @@
 
 	$(document).ready(function(){
 
-		if (window.location.href == 'blog.contactlight.co'){
+		if (window.location.href.indexOf('blog.contactlight.co') > -1){
 			var isBlog = 'current';
 		} else {
 			var isBlog = '';
 		}
 
-		if (window.location.href == 'media.contactlight.co'){
+		if (window.location.href.indexOf('media.contactlight.co') > -1){
 			var isMedia = 'current';
 		} else {
 			var isMedia = '';
