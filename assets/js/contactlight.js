@@ -7,7 +7,7 @@
 			$(this).toggleClass('menuVisible');
 			$('.site').toggleClass('menuVisible');
 			$('.flyout').toggleClass('menuVisible');
-			$('.siteOverlay').toggleClass('visible');
+			$('.siteOverlay').toggleClass('menuVisible');
 
 		});
 

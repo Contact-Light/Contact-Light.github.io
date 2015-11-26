@@ -89,7 +89,7 @@
 		z-index: 1;
 	}
 
-	.siteOverlay.visible {
+	.siteOverlay.menuVisible {
 		display: block;	
 	}
 
