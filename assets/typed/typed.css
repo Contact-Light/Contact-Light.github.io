@@ -588,6 +588,37 @@
 				text-align: left;
 			}
 
+			/* Content Elements */
+
+				.content blockquote {
+					border-color: #F6E698;
+				}
+
+				.content hr {
+					border-color: #fff;
+				}
+
+				.content code,
+				.content code.hljs,
+				.content pre {
+					border-color: transparent;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+				}
+
+				.content img {
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+				}
+
+				.content h6 {
+				    color: rgb(255,255,255);
+				    color: rgba(255,255,255,0.75);
+				    text-align: center;
+				}
+
 		/* Read More */
 
 			a.read-more {
