@@ -608,6 +608,9 @@
 				}
 
 				.content img {
+					max-width: 100%;
+					margin-left: auto;
+					margin-right: auto;
 					-webkit-border-radius: 3px;
 					-moz-border-radius: 3px;
 					border-radius: 3px;
