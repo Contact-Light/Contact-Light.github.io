@@ -620,6 +620,18 @@
 				color: #fff;
 			}
 
+	/* Site Pagination */
+
+		.site-pagination {
+			border: 0;
+			padding-top: 0;
+		}
+
+		.site-pagination a:hover {
+			color: #fff;
+			border-color: #fff;
+		}
+
 	/* Site Footer */
 
 		.site-footer {
