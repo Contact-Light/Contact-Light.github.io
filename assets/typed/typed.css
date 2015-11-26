@@ -476,6 +476,12 @@
 			padding: 60px;
 		}
 
+		.latest-post__post {
+			padding: 0;
+			padding-top: 30px;
+			margin: 0;
+		}
+
 		@media only screen and (max-width: 800px) {
 
 			.latest-post__inner {
