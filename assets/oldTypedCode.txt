@@ -1,0 +1,858 @@
+BLOG - CONTACT LIGHT CODE
+Inserted in to every page on your site before the closing </head> tag.
+
+=====================================================
+
+<style type="text/css">
+
+	/* CONTACT LIGHT TYPED.COM THEME STYLE OVERRIDE */
+
+	@font-face {
+		font-family: "brandon_grotesque_regularRg";
+		src: url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.eot");
+		src: url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.woff2") format("woff2"), url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.woff") format("woff"), url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.ttf") format("truetype"), url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.svg#brandon_grotesque_regularRg") format("svg");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	body {
+		background: #151515 url(http://contactlight.co/images/bg-body.png) 50% 0;
+		color: #fff;
+		-webkit-font-smoothing: antialiased;
+		-moz-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+		font-family: 'brandon_grotesque_regularRg', helvetica, arial, sans-serif;
+	}
+
+	/* Header */
+
+		.site-header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0;
+			right: 0;
+			border-bottom: 1px solid rgba(255,255,255,0.1);
+			overflow: hidden;
+			padding: 50px;
+			padding-bottom: 42px;
+			z-index: 9999;
+			width: 100%;
+			max-width: 100%;
+			background: rgba(0,0,0,0.35);
+		}
+
+		.headerLogo {
+			width: auto;
+			height: 50px;
+			margin-top: -5px;
+			float: left;
+			display: block;
+			overflow: hidden;
+		}
+
+		.headerLogo img {
+			width: auto;
+			height: 100%;
+			margin: 0;
+			display: block;
+		}
+
+		.mobileHeaderLogo {
+			display: none;
+		}
+
+		@media only screen and (max-width: 750px) {
+
+			.site-header {
+				padding: 15px 0px;
+				padding-top: 20px;
+				padding-bottom: 0;
+			}
+
+			.headerLogo {
+				display: none;
+			}
+
+			a.mobileHeaderLogo {
+				display: block;
+				width: 40px;
+				height: auto;
+				float: left;
+				border: 0;
+				margin-left: 15px;
+			}
+
+			.mobileHeaderLogo img {
+				width: 100%;
+				height: auto;
+			}
+
+		}
+
+		/* Nav */
+
+			.site-nav {
+				float: right;
+				margin: 0;
+				margin-top: 12px;
+			}
+
+			.site-nav ul {
+				overflow: hidden;
+				margin: 0;
+			}
+
+			.site-nav li {
+				margin: 0;
+				float: left;
+				display: block;
+				width: auto;
+				margin-left: 40px;
+			}
+
+			.site-nav li:first-child {
+				margin-left: 0px;
+			}
+
+			.site-nav a {
+				color: #F6E698;
+				width: auto;
+				border: 0;
+				background: transparent;
+				padding: 0;
+				margin: 0;
+				font-family: 'brandon_grotesque_regularRg', helvetica, arial, sans-serif;
+				display: block;
+				cursor: pointer;
+				font-size: 14px;
+				line-height: 14px;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+
+			.site-nav li:first-child a {
+				border: 0;
+			}
+
+			.site-nav a:hover,
+			.site-nav li.current a {
+				color: #fff;
+				background: transparent;
+				border: 0;
+			}
+
+			a.menu-reveal {
+				display: none;
+			}
+
+			@media only screen and (max-width: 750px) {
+
+				.site-nav {
+					margin: 0;
+					text-align: center;
+					margin-top: 14px;
+				}
+
+				.site-nav li {
+					margin-left: 0px;
+					margin-right: 15px;
+				}
+
+				.site-nav li:first-child {
+					display: none;
+				}
+
+				a.menu-reveal {
+					display: none;
+				}
+
+			}
+
+	/* Title */
+
+		.site-title a {
+			color: #F6E698;
+			font-family: 'brandon_grotesque_regularRg', helvetica, arial, sans-serif;
+			font-weight: normal;
+		}
+
+		.post-title,
+		.post-title a {
+			color: #F6E698;
+		}
+
+		.post-title a:hover {
+			color: #fff;
+		}
+
+		article.post h1 {
+			text-align: center;
+		}
+
+		.site-title {
+			display: none;
+		}
+
+	/* Meta */
+
+		article.post .post-meta {
+			text-align: center;
+		}
+
+		.post-meta {
+		    color: rgb(255,255,255);
+		    color: rgba(255,255,255,0.75);
+		}
+
+		.post-meta a {
+		    color: #fff;
+		}
+
+		.post-meta a:hover {
+			color: #F6E698;
+		}
+
+	/* Content */
+
+		#content {
+			margin-top: 220px;
+		}
+
+		@media only screen and (max-width: 750px) {
+
+			#content {
+				margin-top: 100px;
+			}
+
+		}
+
+		.post-content a,
+		.post-excerpt a,
+                .post-author a {
+			border-color: #F6E698;
+			color: #fff;
+		}
+
+		.post-content a:hover,
+		.post-excerpt a:hover,
+                .post-author a:hover {
+			color: #F6E698;
+		}
+
+		.post-content blockquote {
+			border-color: #F6E698;
+		}
+
+		.post-content hr {
+			border-color: #fff;
+		}
+
+		.post-content code,
+		.post-content code.hljs,
+		.post-content pre {
+			border-color: transparent;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+
+		.post-content img {
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+
+		.post-content h6 {
+		    color: rgb(255,255,255);
+		    color: rgba(255,255,255,0.75);
+		    text-align: center;
+		}
+
+	/* Read more */
+
+		a.read-more {
+			color: #fff;
+			border-color: #F6E698;
+		}
+
+		a.read-more:hover {
+			color: #F6E698;
+		}
+
+	/* Author */
+
+		/*.post-author {
+			display: none;
+		}*/
+
+		.post-author {
+			border: 0;
+			border-top: 1px solid #fff;
+			padding: 0;
+			padding-top: 50px;
+		}
+
+	/* Custom Tools */
+
+		.customTools {
+			list-style: none;
+			text-align: center;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+
+		.customTools li {
+			float: none;
+			display: inline-block;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+
+		.customTools li:last-child {
+			margin-right: 0;
+		}
+
+		.customTools a {
+			color: #fff;
+			opacity: 0.75;
+			border: 0;
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		.customTools a:hover {
+			opacity: 1;
+		}
+
+	/* Pagination */
+
+		.pagination li a {
+			background: transparent;
+			color: #F6E698;
+			border: 0;
+		}
+
+		.pagination li a:hover {
+			color: #fff;
+			background: transparent;
+		}
+
+</style>
+<script type="text/javascript" src="http://clients.monotonedigital.com/contactlight/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('.site-header').prepend('<a href="http://contactlight.co"><a href="http://contactlight.co" class="mobileHeaderLogo"><img src="http://contactlight.co/images/logo.png" alt="Contact Light" /></a><div class="headerLogo"><a href="http://contactlight.co"><img src="http://contactlight.co/images/full-logo.png" /></a></div>');
+	});
+
+	// remove typed favicon
+	
+		$(document).ready(function(){
+			$("link[src='https://themes.typed.com/a156bbe9-1969-4c72-8627-9ee4f3c87048/assets/img/icon.png']").remove();
+			$("link[src='https://themes.typed.com/a156bbe9-1969-4c72-8627-9ee4f3c87048/assets/img/mask-icon.svg']").remove();
+			$("link[src='https://themes.typed.com/a156bbe9-1969-4c72-8627-9ee4f3c87048/assets/img/apple-touch-icon-precomposed.png']").remove();
+		});
+
+	// for blog
+
+		$(document).ready(function(){
+			if($('.site-nav li:nth-child(2) a:contains("Blog")')){
+				$('.site-nav li:nth-child(2)').addClass('current');
+			}
+		});
+
+	// for media
+
+		// $(document).ready(function(){
+		// 	if($('.site-nav li:nth-child(3) a:contains("Press & Media")')){
+		// 		$('.site-nav li:nth-child(3)').addClass('current');
+		// 	}
+		// });
+
+	// hide timestamp
+	
+		$(document).ready(function(){
+			$('time').text(function (_,txt) {
+			    return txt.slice(0, -6);
+			});
+		});
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60446925-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<link rel="apple-touch-icon" sizes="57x57" href="http://contactlight.co/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://contactlight.co/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://contactlight.co/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://contactlight.co/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://contactlight.co/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://contactlight.co/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://contactlight.co/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://contactlight.co/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://contactlight.co/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="http://contactlight.co/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://contactlight.co/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="http://contactlight.co/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="http://contactlight.co/favicon-16x16.png" sizes="16x16">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="http://contactlight.co/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+=====================================================
+
+Blog Posts’ Code
+
+=====================================================
+
+<ul class="customTools"><li><a href="https://twitter.com/share?via=takethemoonshot">Share on Twitter</a></li><li><a href="https://www.facebook.com/sharer/sharer.php">Share on Facebook</a></li><li><a href="javascript:window.print()">Print</a></li><li><a href="http://pdf-ace.com/pdfme?print_media=1">Save to PDF</a></li></ul>
+
+=====================================================
+
+MEDIA - CONTACT LIGHT CODE
+Inserted in to every page on your site before the closing </head> tag.
+
+=====================================================
+
+<style type="text/css">
+
+	/* CONTACT LIGHT TYPED.COM THEME STYLE OVERRIDE */
+
+	@font-face {
+		font-family: "brandon_grotesque_regularRg";
+		src: url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.eot");
+		src: url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.woff2") format("woff2"), url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.woff") format("woff"), url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.ttf") format("truetype"), url("http://contactlight.co/fonts/brandongrotesque-regular-webfont.svg#brandon_grotesque_regularRg") format("svg");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	body {
+		background: #151515 url(http://contactlight.co/images/bg-body.png) 50% 0;
+		color: #fff;
+		-webkit-font-smoothing: antialiased;
+		-moz-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+		font-family: 'brandon_grotesque_regularRg', helvetica, arial, sans-serif;
+	}
+
+	/* Header */
+
+		.site-header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			margin: 0;
+			right: 0;
+			border-bottom: 1px solid rgba(255,255,255,0.1);
+			overflow: hidden;
+			padding: 50px;
+			padding-bottom: 42px;
+			z-index: 9999;
+			width: 100%;
+			max-width: 100%;
+			background: rgba(0,0,0,0.35);
+		}
+
+		.headerLogo {
+			width: auto;
+			height: 50px;
+			margin-top: -5px;
+			float: left;
+			display: block;
+			overflow: hidden;
+		}
+
+		.headerLogo img {
+			width: auto;
+			height: 100%;
+			margin: 0;
+			display: block;
+		}
+
+		.mobileHeaderLogo {
+			display: none;
+		}
+
+		@media only screen and (max-width: 750px) {
+
+			.site-header {
+				padding: 15px 0px;
+				padding-top: 20px;
+				padding-bottom: 0;
+			}
+
+			.headerLogo {
+				display: none;
+			}
+
+			a.mobileHeaderLogo {
+				display: block;
+				width: 40px;
+				height: auto;
+				float: left;
+				border: 0;
+				margin-left: 15px;
+			}
+
+			.mobileHeaderLogo img {
+				width: 100%;
+				height: auto;
+			}
+
+		}
+
+		/* Nav */
+
+			.site-nav {
+				float: right;
+				margin: 0;
+				margin-top: 12px;
+			}
+
+			.site-nav ul {
+				overflow: hidden;
+				margin: 0;
+			}
+
+			.site-nav li {
+				margin: 0;
+				float: left;
+				display: block;
+				width: auto;
+				margin-left: 40px;
+			}
+
+			.site-nav li:first-child {
+				margin-left: 0px;
+			}
+
+			.site-nav a {
+				color: #F6E698;
+				width: auto;
+				border: 0;
+				background: transparent;
+				padding: 0;
+				margin: 0;
+				font-family: 'brandon_grotesque_regularRg', helvetica, arial, sans-serif;
+				display: block;
+				cursor: pointer;
+				font-size: 14px;
+				line-height: 14px;
+				font-weight: normal;
+				text-transform: uppercase;
+			}
+
+			.site-nav li:first-child a {
+				border: 0;
+			}
+
+			.site-nav a:hover,
+			.site-nav li.current a {
+				color: #fff;
+				background: transparent;
+				border: 0;
+			}
+
+			a.menu-reveal {
+				display: none;
+			}
+
+			@media only screen and (max-width: 750px) {
+
+				.site-nav {
+					margin: 0;
+					text-align: center;
+					margin-top: 14px;
+				}
+
+				.site-nav li {
+					margin-left: 0px;
+					margin-right: 15px;
+				}
+
+				.site-nav li:first-child {
+					display: none;
+				}
+
+				a.menu-reveal {
+					display: none;
+				}
+
+			}
+
+	/* Title */
+
+		.site-title a {
+			color: #F6E698;
+			font-family: 'brandon_grotesque_regularRg', helvetica, arial, sans-serif;
+			font-weight: normal;
+		}
+
+		.post-title,
+		.post-title a {
+			color: #F6E698;
+		}
+
+		.post-title a:hover {
+			color: #fff;
+		}
+
+		article.post h1 {
+			text-align: center;
+		}
+
+		.site-title {
+			display: none;
+		}
+
+	/* Meta */
+
+		article.post .post-meta {
+			text-align: center;
+		}
+
+		.post-meta {
+		    color: rgb(255,255,255);
+		    color: rgba(255,255,255,0.75);
+		}
+
+		.post-meta a {
+		    color: #fff;
+		}
+
+		.post-meta a:hover {
+			color: #F6E698;
+		}
+
+	/* Content */
+
+		#content {
+			margin-top: 220px;
+		}
+
+		@media only screen and (max-width: 750px) {
+
+			#content {
+				margin-top: 100px;
+			}
+
+		}
+
+		.post-content a,
+		.post-excerpt a {
+			border-color: #F6E698;
+			color: #fff;
+		}
+
+		.post-content a:hover,
+		.post-excerpt a:hover {
+			color: #F6E698;
+		}
+
+		.post-content blockquote {
+			border-color: #F6E698;
+		}
+
+		.post-content hr {
+			border-color: #fff;
+		}
+
+		.post-content code,
+		.post-content code.hljs,
+		.post-content pre {
+			border-color: transparent;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+
+		.post-content img {
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+
+		.post-content h6 {
+		    color: rgb(255,255,255);
+		    color: rgba(255,255,255,0.75);
+		    text-align: center;
+		}
+
+	/* Read more */
+
+		a.read-more {
+			color: #fff;
+			border-color: #F6E698;
+		}
+
+		a.read-more:hover {
+			color: #F6E698;
+		}
+
+	/* Author */
+
+		.post-author {
+			display: none;
+		}
+
+		.post-author {
+			border: 0;
+			border-top: 1px solid #fff;
+			padding: 0;
+			padding-top: 50px;
+		}
+
+	/* Custom Tools */
+
+		.customTools {
+			list-style: none;
+			text-align: center;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+
+		.customTools li {
+			float: none;
+			display: inline-block;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+
+		.customTools li:last-child {
+			margin-right: 0;
+		}
+
+		.customTools a {
+			color: #fff;
+			opacity: 0.75;
+			border: 0;
+			font-size: 14px;
+			line-height: 24px;
+		}
+
+		.customTools a:hover {
+			opacity: 1;
+		}
+
+	/* Pagination */
+
+		.pagination li a {
+			background: transparent;
+			color: #F6E698;
+			border: 0;
+		}
+
+		.pagination li a:hover {
+			color: #fff;
+			background: transparent;
+		}
+
+</style>
+<style type="text/css" media="print">
+
+    .site-header {
+        display: none;
+    }
+
+    #content {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .main {
+    	margin: 0;
+    	padding: 0;
+    	width: 100%;
+    	padding: 80px;
+    }
+
+    .customTools {
+    	display: none;
+    }
+
+</style>
+<script type="text/javascript" src="http://clients.monotonedigital.com/contactlight/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('.site-header').prepend('<a href="http://contactlight.co"><a href="http://contactlight.co" class="mobileHeaderLogo"><img src="http://contactlight.co/images/logo.png" alt="Contact Light" /></a><div class="headerLogo"><a href="http://contactlight.co"><img src="http://contactlight.co/images/full-logo.png" /></a></div>');
+	});
+
+	// remove typed favicon
+	
+		$(document).ready(function(){
+			$("link[src='https://themes.typed.com/a156bbe9-1969-4c72-8627-9ee4f3c87048/assets/img/icon.png']").remove();
+			$("link[src='https://themes.typed.com/a156bbe9-1969-4c72-8627-9ee4f3c87048/assets/img/mask-icon.svg']").remove();
+			$("link[src='https://themes.typed.com/a156bbe9-1969-4c72-8627-9ee4f3c87048/assets/img/apple-touch-icon-precomposed.png']").remove();
+		});
+
+	// for blog
+
+		// $(document).ready(function(){
+		// 	if($('.site-nav li:nth-child(2) a:contains("Blog")')){
+		// 		$('.site-nav li:nth-child(2)').addClass('current');
+		// 	}
+		// });
+
+	// for media
+
+		$(document).ready(function(){
+			if($('.site-nav li:nth-child(3) a:contains("Press & Media")')){
+				$('.site-nav li:nth-child(3)').addClass('current');
+			}
+		});
+
+	// hide timestamp
+	
+		$(document).ready(function(){
+			$('time').text(function (_,txt) {
+			    return txt.slice(0, -6);
+			});
+		});
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60446925-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<link rel="apple-touch-icon" sizes="57x57" href="http://contactlight.co/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://contactlight.co/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://contactlight.co/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://contactlight.co/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://contactlight.co/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://contactlight.co/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://contactlight.co/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://contactlight.co/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://contactlight.co/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="http://contactlight.co/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://contactlight.co/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="http://contactlight.co/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="http://contactlight.co/favicon-16x16.png" sizes="16x16">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="http://contactlight.co/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+=====================================================
+
+Blog Posts' Code
+
+=====================================================
+
+<ul class="customTools"><li><a href="https://twitter.com/share?via=takethemoonshot">Share on Twitter</a></li><li><a href="https://www.facebook.com/sharer/sharer.php">Share on Facebook</a></li><li><a href="javascript:window.print()">Print</a></li><li><a href="http://pdf-ace.com/pdfme?print_media=1">Save to PDF</a></li></ul>
+
+=====================================================
