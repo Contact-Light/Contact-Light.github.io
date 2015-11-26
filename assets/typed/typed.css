@@ -616,10 +616,20 @@
 					border-radius: 3px;
 				}
 
+				.content h1,
+				.content h2,
+				.content h3,
+				.content h4,
+				.content h5,
+				.content h6 {
+					font-family: 'brandon_grotesque_regularRg', helvetica, arial, sans-serif;
+				}
+
 				.content h6 {
 				    color: rgb(255,255,255);
 				    color: rgba(255,255,255,0.75);
 				    text-align: center;
+					text-transform: none;
 				}
 
 		/* Read More */
