@@ -20,10 +20,22 @@
 // Structure
 
 	$(document).ready(function(){
+
+		if (window.location.href == 'blog.contactlight.co'){
+			var isBlog = 'current';
+		} else {
+			var isBlog = '';
+		}
+
+		if (window.location.href == 'media.contactlight.co'){
+			var isMedia = 'current';
+		} else {
+			var isMedia = '';
+		}
 		
 		$('.wrapper').wrap('<div class="site"></div>');
 		$('.site').before('<div class="flyout"><ul class="menu"><li><a href="http://contactlight.co">Products</a></li><li><a href="http://contactlight.co/about/index.html">About</a></li><li><a class="current" href="http://blog.contactlight.co">Blog</a></li><li><a href="http://media.contactlight.co">Press &amp; Media</a></li><li><a href="http://contactlight.co/contact/index.html">Contact</a></li></ul></div>');
-		$('.site').prepend('<div class="headerContainer"><div class="header"><div class="menuToggle"></div><a href="http://contactlight.co"><div class="logo"></div></a><ul class="nav"><li><a href="http://contactlight.co">Products</a></li><li><a href="http://contactlight.co/about/index.html">About</a></li><li><a class="current" href="http://blog.contactlight.co">Blog</a></li><li><a href="http://media.contactlight.co">Press &amp; Media</a></li><li><a href="http://contactlight.co/contact/index.html">Contact</a></li></ul><div class="clearfix"></div></div></div>');
+		$('.site').prepend('<div class="headerContainer"><div class="header"><div class="menuToggle"></div><a href="http://contactlight.co"><div class="logo"></div></a><ul class="nav"><li><a href="http://contactlight.co">Products</a></li><li><a href="http://contactlight.co/about/index.html">About</a></li><li><a class="' + isBlog + '"" href="http://blog.contactlight.co">Blog</a></li><li><a class="' + isMedia + '"" href="http://media.contactlight.co">Press &amp; Media</a></li><li><a href="http://contactlight.co/contact/index.html">Contact</a></li></ul><div class="clearfix"></div></div></div>');
 		$('.site').append('<div class="footerContainer"><div class="cl_footer"><div class="copyright">&copy; 2015 Contact Light Pty Ltd</div><ul class="footerNav"><li><a href="https://www.facebook.com/takethemoonshot">Facebook</a></li><li><a href="https://twitter.com/takethemoonshot">Twitter</a></li></ul><div class="clearfix"></div></div></div>');
 
 	});
