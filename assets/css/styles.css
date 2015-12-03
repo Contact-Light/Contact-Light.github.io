@@ -486,14 +486,6 @@
 				margin-bottom: 60px;
 			}
 
-			.apps li.more {
-				display: none;
-			}
-
-			.apps li.more.showOnMobile {
-				display: block;
-			}
-
 		}
 
 		@media only screen and (max-width: 700px) {
