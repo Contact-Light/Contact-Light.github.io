@@ -29,6 +29,7 @@
 
 		if (window.location.href.indexOf('media.contactlight.co') > -1){
 			var isMedia = 'current';
+			$('.post-extras .post-author').css('display', 'none');
 		} else {
 			var isMedia = '';
 		}
