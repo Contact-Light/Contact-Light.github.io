@@ -31,7 +31,7 @@
 			var isMedia = 'current';
 			$('.post-extras .post-author').css('display', 'none');
 			$('.post-footer').css('display', 'none');
-			$('.post-extras__date').html().replace('Jamie Skella', '');
+			$('.post-extras__date').html($('.post-extras__date').html().replace('Jamie Skella', ''));
 		} else {
 			var isMedia = '';
 		}
