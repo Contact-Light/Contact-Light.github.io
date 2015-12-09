@@ -187,15 +187,19 @@
 			display: block;
 			width: 220px;
 			height: 41px;
-			background-image: url(img/logo.png);
+			background-image: url(../img/logo.png);
 			background-size: 220px 41px;
 			background-repeat: no-repeat;
 		}
 
-		@media only screen and (min-width: 800px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		.mobLogo {
+			display: none;
+		}
+
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
 			.logo {
-				background-image: url(img/logo_2x.png);
+				background-image: url(../img/logo_2x.png);
 			}
 
 		}
@@ -207,6 +211,11 @@
 			}
 
 			.logo {
+				display: none;
+			}
+
+			.mobLogo {
+				display: block;
 				width: 125px;
 				height: 10px;
 				position: absolute;
@@ -214,16 +223,16 @@
 				margin-top: -5px;
 				left: 50%;
 				margin-left: -62px;
-				background-image: url(img/mobLogo.png);
+				background-image: url(../img/mobLogo.png);
 				background-size: 125px 10px;
 			}
 
 		}
 
-		@media only screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 
-			.logo {
-				background-image: url(img/mobLogo_2x.png);
+			.mobLogo {
+				background-image: url(../img/mobLogo_2x.png);
 			}
 
 		}
