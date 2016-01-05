@@ -3,6 +3,7 @@
     <metadata>
         <id>contactlight-public-website</id>
         <version>0.0.0</version>
+		<authors>contactlight</authors>
         <title>contactlight-public-website</title>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>contactlight public website</description>               
