@@ -17,7 +17,7 @@
 	}
 
 /* Body */
-            
+
     @keyframes fadeIn {
         0% {opacity: 0;}
         100% {opacity: 1;}
@@ -27,17 +27,17 @@
         0% {opacity: 0;}
         100% {opacity: 1;}
     }
-    
+
     @-moz-keyframes fadeIn {
         0% {opacity: 0;}
         100% {opacity: 1;}
     }
-    
+
     @-ms-keyframes fadeIn {
         0% {opacity: 0;}
         100% {opacity: 1;}
     }
-    
+
     @-o-keyframes fadeIn {
         0% {opacity: 0;}
         100% {opacity: 1;}
@@ -90,7 +90,7 @@
 	}
 
 	.siteOverlay.visible {
-		display: block;	
+		display: block;
 	}
 
 	.siteContainer {
@@ -654,7 +654,7 @@
 		text-align: left;
 		padding: 80px;
 		font-size: 16px;
-		line-height: 26px;
+		line-height: 20px;
 		color: rgb(255,255,255);
 		color: rgba(255,255,255,0.25);
 	}
@@ -672,28 +672,20 @@
 
 	}
 
-	/* Copyright */
-
-		.copyright {
-			float: left;
-		}
-
-		@media only screen and (max-width: 800px) {
-
-			.copyright {
-				float: none;
-				width: 100%;
-				text-align: center;
-			}
-
-		}
-
 	/* Nav */
 
 		.footerNav {
 			float: right;
 			list-style: none;
 			overflow: hidden;
+		}
+
+		.footerNav.left {
+			float: left
+		}
+
+		.footerNav.right {
+			float: right;
 		}
 
 		.footerNav li {
