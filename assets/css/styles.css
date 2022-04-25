@@ -409,13 +409,14 @@
 			}
 
 			.bigTitlesNC h2 {
-				font-size: 24px;
+				font-size: 32px;
 				line-height: 28px;
 				color: rgb(255,255,255);
 				color: rgba(255,255,255,0.5);
 				font-weight: 100;
 				display: block;
 				margin-top: 20px;
+				margin-bottom: 20px;
 			}
 
 			@media only screen and (max-width: 800px) {
@@ -618,23 +619,24 @@
 				margin-left: auto;
 				margin-right: auto;
 				text-align: left;
-				padding: 40px;
-				color: #EDE185;
-				font-size: 18px;
+				padding: 0px 40px 40px 40px;
+				color: #ffffff;
+				font-size: 24px;
 				line-height: 28px;
 			}
 
 
-			@media only screen and (max-width: 800px) {
+			/* @media only screen and (max-width: 800px) {
 
 				.overviewContent {
 					padding: 30px;
 				}
 
-			}
+			} */
 
 				.overviewContent p {
 					margin-bottom: 28px;
+
 				}
 
 				.overviewContent p:last-child {
@@ -644,6 +646,11 @@
 			.overviewContent li {
 				margin-left: 28px;
 			}
+
+			.overviewContent ul {
+				padding-bottom: 40px;
+			}
+
 
 
 		/* Title */
