@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Google Map</title>
+</head>
+<style type="text/css">
+#map {
+  height: 100%;
+}
+
+/*
+ * Optional: Makes the sample page fill the window.
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+</style>
+<body onload="myfunction();">
+<div id="map">
+</div>
+<script type="text/javascript">
+   function myfunction(){
+       var map;
+       var start = new google.maps.LatLng(-33.738045,151.1333094);
+       var end = new google.maps.LatLng(-33.738045,151.1333094);
+       var option ={
+           zoom : 6,
+           streetViewControl: false,
+           mapTypeControl: false,
+           fullscreenControl: false,
+           center: { lat:-28.0710,lng:145.6882 }
+       };
+       map = new google.maps.Map(document.getElementById('map'),option);
+       var display = new google.maps.DirectionsRenderer();
+       var services = new google.maps.DirectionsService();
+       display.setMap(map);
+           var request ={
+               origin : start,
+               destination:end,
+               waypoints:[{
+                 location: 'Merriwa NSW AU',
+                 stopover: false
+               },{
+                 location: 'Trangie NSW AU',
+                 stopover: true
+               },{
+                 location: 'Bourke NSW AU',
+                 stopover: true
+               },{
+                 location: 'Tambo QLD AU',
+                 stopover: true
+               },{
+                 location: 'Winton QLD AU',
+                 stopover: true
+               },{
+                 location: 'Ilfracombe QLD AU',
+                 stopover: true
+               },{
+                 location: 'Barcaldine QLD AU',
+                 stopover: false
+               },{
+                 location: 'Aramac QLD AU',
+                 stopover: false
+               },{
+                 location: 'BarcaldineQLD AU',
+                 stopover: true
+               },{
+                 location: 'Blackall QLD AU',
+                 stopover: true
+               },{
+                 location: 'Tambo QLD AU',
+                 stopover: true
+               },{
+                 location: 'Blackall QLD AU',
+                 stopover: true
+               },{
+                 location: 'Barcaldine QLD AU',
+                 stopover: false
+               },{
+                 location: 'Longreach QLD AU',
+                 stopover: false
+               },{
+                 location: 'Stonehenge QLD AU',
+                 stopover: false
+               },{
+                 location: 'Jundah QLD AU',
+                 stopover: false
+               },{
+                 location: 'Windorah QLD AU',
+                 stopover: true
+               },{
+                 location: 'Quilpie QLD AU',
+                 stopover: false
+               },{
+                 location: 'Charleville QLD AU',
+                 stopover: true
+               },{
+                 location: 'Nyngan NSW AU',
+                 stopover: false
+               },{
+                 location: 'Nevertire NSW AU',
+                 stopover: false
+               },{
+                 location: 'Trangie NSW AU',
+                 stopover: true
+               },{
+                 location: 'Orange NSW AU',
+                 stopover: false
+               },{
+                 location: 'Bathurst NSW AU',
+                 stopover: false
+               }],
+               travelMode: 'DRIVING'
+           };
+           services.route(request,function(result,status){
+               if(status =='OK'){
+                   display.setDirections(result);
+               }
+           });
+   }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9ENt1IbUbUf8a2Ixca_UTPZ_SztxFY18&libraries=places"></script>
+
+</body>
+</html>
